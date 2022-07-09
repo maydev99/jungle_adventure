@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+<img src="https://github.com/maydev99/cryptology/blob/master/media/3phonesmock2.png" width=75% height=75%>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
