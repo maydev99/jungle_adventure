@@ -133,6 +133,14 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler, H
     super.onCollision(intersectionPoints, other);
   }
 
+  @override
+  void onCollisionEnd(PositionComponent other) {
+    if(other is Platform) {
+      _isOnGround = false;
+    }
+    super.onCollisionEnd(other);
+  }
+
   void hit() {
     add(OpacityEffect.fadeOut(
         EffectController(alternate: true, duration: 0.1, repeatCount: 5)));
