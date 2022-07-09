@@ -33,7 +33,7 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler, H
         int? priority,
       }) : super.fromImage(
     image,
-    srcPosition: Vector2(64,96),
+    srcPosition: Vector2(64,97),
     srcSize: Vector2.all(32),
     position: position,
     size: size,
@@ -52,7 +52,7 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler, H
 
   @override
   Future<void>? onLoad() {
-    debugMode = true;
+    //debugMode = true;
     add(CircleHitbox());
     return super.onLoad();
 
