@@ -1,0 +1,111 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "assets/tiles/level1.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "assets/images/player_sprite.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/color_squares.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/grey_brick_32.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/grey_brick_32_B.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/jungle_sheet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/jungle_sheet2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/level1.tmx": {
+            "scale": 2.12,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 339.62264150943395,
+                "y": 146.93396226415095
+            }
+        },
+        "assets/tiles/light.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/pixel_art_forest.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/spritesheet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/spritesheet2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/spritesheet3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/weird_lamp_2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/wierd_lamp.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "/Users/michaelmay/AndroidStudioProjects/jungle_adventure/assets/images",
+    "map.height": 12,
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.tileHeight": 32,
+    "map.tileWidth": 32,
+    "map.width": 20,
+    "openFiles": [
+        "assets/tiles/spritesheet.tsx",
+        "assets/tiles/level1.tmx",
+        "assets/tiles/pixel_art_forest.tsx",
+        "assets/tiles/grey_brick_32.tsx",
+        "assets/tiles/grey_brick_32_B.tsx",
+        "assets/tiles/color_squares.tsx",
+        "assets/tiles/wierd_lamp.tsx",
+        "assets/tiles/weird_lamp_2.tsx"
+    ],
+    "project": "jungle.tiled-project",
+    "recentFiles": [
+        "assets/tiles/spritesheet2.tsx",
+        "assets/tiles/wierd_lamp.tsx",
+        "assets/images/player_sprite.tsx",
+        "assets/tiles/light.tsx",
+        "assets/tiles/weird_lamp_2.tsx",
+        "assets/tiles/color_squares.tsx",
+        "assets/tiles/grey_brick_32_B.tsx",
+        "assets/tiles/grey_brick_32.tsx",
+        "assets/tiles/pixel_art_forest.tsx",
+        "assets/tiles/level1.tmx",
+        "assets/tiles/spritesheet.tsx",
+        "assets/tiles/spritesheet3.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 32,
+        "width": 32
+    }
+}
