@@ -1,10 +1,11 @@
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/image_composition.dart';
-import 'package:jungle_adventure/game/player.dart';
+import 'package:jungle_adventure/game/actors/player.dart';
+import 'package:jungle_adventure/game/jungle_game.dart';
 
 // Represents a door in the game world.
-class Door extends SpriteComponent with CollisionCallbacks {
+class Door extends SpriteComponent with CollisionCallbacks, HasGameRef<JungleGame> {
   Function? onPlayerEnter;
 
   Door(
@@ -38,7 +39,10 @@ class Door extends SpriteComponent with CollisionCallbacks {
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (other is Player) {
-     // onPlayerEnter?.call();
+      other.removeFromParent();
+      onPlayerEnter?.call();
+      gameRef.playerData.key.value = false;
+
     }
     super.onCollisionStart(intersectionPoints, other);
   }

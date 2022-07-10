@@ -6,8 +6,9 @@ import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
 import 'package:flame/input.dart';
 import 'package:flutter/services.dart';
+import 'package:jungle_adventure/game/actors/platform.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
-import 'package:jungle_adventure/game/platform.dart';
+
 
 
 class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler, HasGameRef<JungleGame> {
@@ -33,8 +34,8 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler, H
         int? priority,
       }) : super.fromImage(
     image,
-    srcPosition: Vector2(64,97),
-    srcSize: Vector2.all(32),
+    srcPosition: Vector2(3 * 32, 2 * 32),
+    srcSize: Vector2.all(31),
     position: position,
     size: size,
     scale: scale,

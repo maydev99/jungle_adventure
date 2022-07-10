@@ -3,7 +3,7 @@ import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
-import 'package:jungle_adventure/game/player.dart';
+import 'package:jungle_adventure/game/actors/player.dart';
 
 
 class Enemy extends SpriteComponent
@@ -22,7 +22,7 @@ class Enemy extends SpriteComponent
         Anchor? anchor,
         int? priority,
       }) : super.fromImage(image,
-      srcPosition: Vector2(3 * 32, 1 * 32),
+      srcPosition: Vector2(2 * 32, 32),
       srcSize: Vector2.all(32),
       position: position,
       size: size,
@@ -69,13 +69,13 @@ class Enemy extends SpriteComponent
             onComplete: () => removeFromParent(),
           ),
         );
-        //gameRef.playerData.health.value += 1;
-        //other.jump();
+        gameRef.playerData.health.value += 1;
+        other.jump = true;
       } else {
         other.hit();
-       // if (gameRef.playerData.health.value > 0) {
-         // gameRef.playerData.health.value -= 1;
-       // }
+        if (gameRef.playerData.health.value > 0) {
+          gameRef.playerData.health.value -= 1;
+       }
       }
 
 

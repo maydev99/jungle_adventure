@@ -1,10 +1,12 @@
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
+import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
-import 'package:jungle_adventure/game/player.dart';
+import 'package:jungle_adventure/game/actors/player.dart';
+import 'package:jungle_adventure/game/jungle_game.dart';
 
 // Represents a Key in the game world.
-class Key extends SpriteComponent with CollisionCallbacks {
+class Key extends SpriteComponent with CollisionCallbacks, HasGameRef<JungleGame>{
   Function? onPlayerEnter;
 
   Key(
@@ -18,7 +20,7 @@ class Key extends SpriteComponent with CollisionCallbacks {
         int? priority,
       }) : super.fromImage(
     image,
-    srcPosition: Vector2(3 * 32, 0),
+    srcPosition: Vector2(32, 32),
     srcSize: Vector2.all(32),
     position: position,
     size: size,
@@ -38,7 +40,13 @@ class Key extends SpriteComponent with CollisionCallbacks {
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (other is Player) {
-      // onPlayerEnter?.call();
+      add(
+        OpacityEffect.fadeOut(LinearEffectController(0.3), onComplete: () {
+          add(RemoveEffect());
+          gameRef.playerData.key.value = true;
+        }),
+      );
+
     }
     super.onCollisionStart(intersectionPoints, other);
   }

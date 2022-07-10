@@ -37,11 +37,19 @@
             "scaleInEditor": 1
         },
         "assets/tiles/level1.tmx": {
-            "scale": 2.26,
+            "scale": 1.3082291666666668,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 318.14159292035396,
-                "y": 189.15929203539824
+                "x": 480.0382196034716,
+                "y": 192.24460546221826
+            }
+        },
+        "assets/tiles/level2.tmx": {
+            "scale": 1.3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 479.99999999999994,
+                "y": 192.69230769230768
             }
         },
         "assets/tiles/light.tsx": {
@@ -85,10 +93,10 @@
         "assets/tiles/spritesheet2.tsx"
     ],
     "project": "jungle.tiled-project",
-    "property.type": "object",
+    "property.type": "string",
     "recentFiles": [
-        "assets/tiles/spritesheet2.tsx",
         "assets/tiles/level1.tmx",
+        "assets/tiles/spritesheet2.tsx",
         "assets/tiles/items.tsx",
         "assets/tiles/wierd_lamp.tsx",
         "assets/images/player_sprite.tsx",
@@ -107,6 +115,6 @@
         "height": 32,
         "width": 32
     },
-    "tileset.transparentColor": "#000000",
+    "tileset.transparentColor": "#5309cd",
     "tileset.useTransparentColor": true
 }

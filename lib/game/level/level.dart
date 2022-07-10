@@ -1,15 +1,16 @@
 import 'package:flame/components.dart';
 import 'package:flame/extensions.dart';
 import 'package:flame_tiled/flame_tiled.dart';
-import 'package:jungle_adventure/game/platform.dart';
+
 import 'package:jungle_adventure/game/jungle_game.dart';
-import 'package:jungle_adventure/game/player.dart';
-import 'package:jungle_adventure/game/star.dart';
+import 'package:jungle_adventure/game/actors/player.dart';
+import 'package:jungle_adventure/game/actors/star.dart';
 import 'package:tiled/tiled.dart';
 
-import 'door.dart';
-import 'enemy.dart';
-import 'key.dart';
+import '../actors/door.dart';
+import '../actors/enemy.dart';
+import '../actors/key.dart';
+import '../actors/platform.dart';
 
 class Level extends Component with HasGameRef<JungleGame> {
   final String levelName;
@@ -69,10 +70,12 @@ class Level extends Component with HasGameRef<JungleGame> {
 
         case 'Door':
           final door = Door(
+
               gameRef.spriteSheet,
               position: position,
               size: size,
               onPlayerEnter: () {
+                print('DOOR: ${spawnPoint.properties.first.value}');
                 gameRef.loadLevel(spawnPoint.properties.first.value);
               });
 

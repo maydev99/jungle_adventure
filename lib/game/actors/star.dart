@@ -5,7 +5,7 @@ import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
 import 'package:flutter/animation.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
-import 'package:jungle_adventure/game/player.dart';
+import 'package:jungle_adventure/game/actors/player.dart';
 
 
 class Star extends SpriteComponent
@@ -21,8 +21,8 @@ class Star extends SpriteComponent
         Anchor? anchor,
         int? priority,
       }) : super.fromImage(image,
-      srcPosition: Vector2(3 * 32 + 1, 2 * 32),
-      srcSize: Vector2.all(32),
+      srcPosition: Vector2(2 * 33, 3 * 32),
+      srcSize: Vector2.all(29),
       position: position,
       size: size,
       scale: scale,
@@ -57,7 +57,7 @@ class Star extends SpriteComponent
         }),
       );
 
-    //  gameRef.playerData.score.value += 1;
+      gameRef.playerData.score.value += 1;
     }
     super.onCollisionStart(intersectionPoints, other);
   }
