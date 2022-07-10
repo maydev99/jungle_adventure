@@ -24,6 +24,10 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "assets/tiles/items.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "assets/tiles/jungle_sheet.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -33,11 +37,11 @@
             "scaleInEditor": 1
         },
         "assets/tiles/level1.tmx": {
-            "scale": 2.12,
+            "scale": 2.26,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 339.62264150943395,
-                "y": 146.93396226415095
+                "x": 318.14159292035396,
+                "y": 189.15929203539824
             }
         },
         "assets/tiles/light.tsx": {
@@ -75,20 +79,17 @@
     "map.layerDataFormat": null,
     "map.tileHeight": 32,
     "map.tileWidth": 32,
-    "map.width": 20,
+    "map.width": 30,
     "openFiles": [
-        "assets/tiles/spritesheet.tsx",
         "assets/tiles/level1.tmx",
-        "assets/tiles/pixel_art_forest.tsx",
-        "assets/tiles/grey_brick_32.tsx",
-        "assets/tiles/grey_brick_32_B.tsx",
-        "assets/tiles/color_squares.tsx",
-        "assets/tiles/wierd_lamp.tsx",
-        "assets/tiles/weird_lamp_2.tsx"
+        "assets/tiles/spritesheet2.tsx"
     ],
     "project": "jungle.tiled-project",
+    "property.type": "object",
     "recentFiles": [
         "assets/tiles/spritesheet2.tsx",
+        "assets/tiles/level1.tmx",
+        "assets/tiles/items.tsx",
         "assets/tiles/wierd_lamp.tsx",
         "assets/images/player_sprite.tsx",
         "assets/tiles/light.tsx",
@@ -97,9 +98,7 @@
         "assets/tiles/grey_brick_32_B.tsx",
         "assets/tiles/grey_brick_32.tsx",
         "assets/tiles/pixel_art_forest.tsx",
-        "assets/tiles/level1.tmx",
-        "assets/tiles/spritesheet.tsx",
-        "assets/tiles/spritesheet3.tsx"
+        "assets/tiles/spritesheet.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.margin": 0,
@@ -107,5 +106,7 @@
     "tileset.tileSize": {
         "height": 32,
         "width": 32
-    }
+    },
+    "tileset.transparentColor": "#000000",
+    "tileset.useTransparentColor": true
 }

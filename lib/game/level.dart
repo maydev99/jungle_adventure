@@ -4,7 +4,12 @@ import 'package:flame_tiled/flame_tiled.dart';
 import 'package:jungle_adventure/game/platform.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
 import 'package:jungle_adventure/game/player.dart';
+import 'package:jungle_adventure/game/star.dart';
 import 'package:tiled/tiled.dart';
+
+import 'door.dart';
+import 'enemy.dart';
+import 'key.dart';
 
 class Level extends Component with HasGameRef<JungleGame> {
   final String levelName;
@@ -31,7 +36,7 @@ class Level extends Component with HasGameRef<JungleGame> {
   }
 
   void _spawnActors(RenderableTiledMap tileMap) {
-    final platformsLayer = tileMap.getLayer<ObjectGroup>('PlatformLayer');
+    final platformsLayer = tileMap.getLayer<ObjectGroup>('PlatformsLayer');
 
     for (final platformObject in platformsLayer!.objects) {
       final platform = Platform(
@@ -55,11 +60,11 @@ class Level extends Component with HasGameRef<JungleGame> {
           add(player);
           break;
 
-       /* case 'Coin':
-          final coin = Coin(gameRef.spriteSheet,
+        case 'Star':
+          final star = Star(gameRef.spriteSheet,
               position: position,
               size: size);
-          add(coin);
+          add(star);
           break;
 
         case 'Door':
@@ -74,16 +79,24 @@ class Level extends Component with HasGameRef<JungleGame> {
           add(door);
           break;
 
+        case 'Key':
+          final key = Key(
+              gameRef.spriteSheet,
+              position: position,
+              size: size,
+          );
+          add(key);
+          break;
+
         case 'Enemy':
           final targetObjectId = int.parse(spawnPoint.properties.first.value);
-          final target = spawnPointsLayer.objects
-              .firstWhere((object) => object.id == targetObjectId);
+          final target = spawnPointsLayer.objects.firstWhere((object) => object.id == targetObjectId);
           final enemy = Enemy(gameRef.spriteSheet,
               position: position,
-              targerPosition: Vector2(target.x, target.y),
+              targetPosition: Vector2(target.x, target.y),
               size: size);
           add(enemy);
-          break;*/
+          break;
       }
     }
   }

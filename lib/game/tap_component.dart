@@ -22,7 +22,7 @@ class TapComponent extends PositionComponent
 
   @override
   Future<void>? onLoad() {
-    debugMode = true;
+   // debugMode = true;
     //screenSizeX = gameRef.size.x;
     //print('SCreen Size: $screenSizeX');
     return super.onLoad();
