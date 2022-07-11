@@ -37,10 +37,14 @@
             "scaleInEditor": 1
         },
         "assets/tiles/level1.tmx": {
+            "expandedObjectLayers": [
+                3,
+                2
+            ],
             "scale": 1.3082291666666668,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 480.0382196034716,
+                "x": 479.2738275340393,
                 "y": 192.24460546221826
             }
         },
@@ -93,7 +97,7 @@
         "assets/tiles/spritesheet2.tsx"
     ],
     "project": "jungle.tiled-project",
-    "property.type": "string",
+    "property.type": "object",
     "recentFiles": [
         "assets/tiles/level1.tmx",
         "assets/tiles/spritesheet2.tsx",

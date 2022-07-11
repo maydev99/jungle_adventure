@@ -75,7 +75,6 @@ class Level extends Component with HasGameRef<JungleGame> {
               position: position,
               size: size,
               onPlayerEnter: () {
-                print('DOOR: ${spawnPoint.properties.first.value}');
                 gameRef.loadLevel(spawnPoint.properties.first.value);
               });
 

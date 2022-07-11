@@ -39,9 +39,15 @@ class Door extends SpriteComponent with CollisionCallbacks, HasGameRef<JungleGam
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (other is Player) {
-      other.removeFromParent();
-      onPlayerEnter?.call();
-      gameRef.playerData.key.value = false;
+
+      if(gameRef.playerData.key.value) {
+        other.removeFromParent();
+        onPlayerEnter?.call();
+        gameRef.playerData.key.value = false;
+      } else {
+        print('Door is locked');
+      }
+
 
     }
     super.onCollisionStart(intersectionPoints, other);

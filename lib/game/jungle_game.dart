@@ -8,7 +8,7 @@ import 'package:jungle_adventure/game/level/level.dart';
 import 'package:jungle_adventure/game/tap_component.dart';
 
 
-class JungleGame extends FlameGame with HasCollisionDetection, HasTappableComponents {
+class JungleGame extends FlameGame with HasCollisionDetection, HasTappableComponents  {
   Level? _currentLevel;
   late Image spriteSheet;
   late Image items;
@@ -40,6 +40,12 @@ class JungleGame extends FlameGame with HasCollisionDetection, HasTappableCompon
     tapComponent = TapComponent(size.x, size.y, screenX, screenY);
     add(tapComponent);
     super.onMount();
+  }
+
+  @override
+  void update(double dt) {
+
+    super.update(dt);
   }
 
 

@@ -1,23 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="7">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="70">
  <tileset firstgid="1" source="spritesheet2.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="12">
   <data encoding="base64">
-   CwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAA
+   CwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAgAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACAAAAAsAAAALAAAACAAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACAAAAAsAAAAIAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAA
   </data>
  </layer>
  <objectgroup id="2" name="PlatformsLayer">
   <object id="4" x="0.764392" y="353.149" width="957.019" height="29.8113"/>
-  <object id="5" x="928.736" y="225.496" width="28.2825" height="128.418"/>
+  <object id="5" x="928.736" y="96.2649" width="28.2825" height="257.649"/>
   <object id="6" x="316.458" y="-267.537"/>
+  <object id="7" x="0" y="96.1538" width="32.3077" height="29.2308"/>
+  <object id="8" x="0.769231" y="223.846" width="31.5385" height="29.2308"/>
+  <object id="9" x="97.6923" y="65.3846" width="28.4615" height="28.4615"/>
+  <object id="10" x="95.3846" y="160" width="31.5385" height="30.7692"/>
+  <object id="11" x="96.1538" y="288.462" width="31.5385" height="30.7692"/>
+  <object id="12" x="128.462" y="64.6154" width="30.7692" height="288.462"/>
+  <object id="13" x="161.538" y="66.1538" width="316.923" height="27.6923"/>
+  <object id="14" x="225.385" y="127.692" width="314.615" height="93.8462"/>
+  <object id="15" x="161.538" y="256.154" width="285.385" height="30"/>
+  <object id="16" x="510.769" y="2.30769" width="32.3077" height="124.615"/>
+  <object id="17" x="546.154" y="32.3077" width="93.0769" height="30"/>
+  <object id="18" x="576.923" y="63.0769" width="30.7692" height="254.615"/>
+  <object id="19" x="608.462" y="160" width="30.7692" height="29.2308"/>
+  <object id="20" x="609.231" y="287.692" width="30" height="30"/>
+  <object id="21" x="672.308" y="96.1538" width="31.5385" height="29.2308"/>
+  <object id="22" x="672.308" y="223.846" width="30" height="30.7692"/>
+  <object id="23" x="736.154" y="1.53846" width="30.7692" height="286.154"/>
+  <object id="24" x="767.692" y="95.3846" width="92.3077" height="32.3077"/>
+  <object id="25" x="898.462" y="161.538" width="33.8462" height="193.846"/>
+  <object id="26" x="863.846" y="224.615" width="34.6154" height="126.923"/>
+  <object id="27" x="833.077" y="287.692" width="32.3077" height="65.3846"/>
+  <object id="28" x="800" y="320" width="33.8462" height="30.7692"/>
  </objectgroup>
  <objectgroup id="3" name="SpawnLayer">
   <object id="1" name="Player" gid="12" x="0.816626" y="350.039" width="32" height="32"/>
-  <object id="2" name="Key" gid="6" x="447.222" y="353.097" width="32" height="32"/>
-  <object id="3" name="Door" gid="16" x="897.449" y="353.097" width="32" height="32">
+  <object id="2" name="Key" gid="6" x="543.375" y="33.8661" width="32" height="32"/>
+  <object id="3" name="Door" gid="16" x="928.218" y="95.4046" width="32" height="32">
    <properties>
     <property name="NextLevel" value="level1.tmx"/>
    </properties>
   </object>
+  <object id="29" name="Enemy" gid="7" x="384" y="256" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="35"/>
+   </properties>
+  </object>
+  <object id="30" name="Enemy" gid="7" x="448.615" y="62.1538" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="34"/>
+   </properties>
+  </object>
+  <object id="31" name="Enemy" gid="7" x="417.846" y="351.385" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="36"/>
+   </properties>
+  </object>
+  <object id="32" name="Enemy" gid="7" x="766.308" y="353.692" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="37"/>
+   </properties>
+  </object>
+  <object id="33" name="Enemy" gid="7" x="768.615" y="96" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="38"/>
+   </properties>
+  </object>
+  <object id="34" x="63.8462" y="30">
+   <point/>
+  </object>
+  <object id="35" x="161.538" y="226.154">
+   <point/>
+  </object>
+  <object id="36" x="512.308" y="320.769">
+   <point/>
+  </object>
+  <object id="37" x="575.385" y="320.769">
+   <point/>
+  </object>
+  <object id="38" x="861.538" y="66.1538">
+   <point/>
+  </object>
+  <object id="39" name="Star" gid="15" x="29.3846" y="350.615" width="32" height="32"/>
+  <object id="42" name="Star" gid="15" x="97.0769" y="352.923" width="32" height="32"/>
+  <object id="43" name="Star" gid="15" x="0.153846" y="93.6923" width="32" height="32"/>
+  <object id="44" name="Star" gid="15" x="97.0769" y="159.846" width="32" height="32"/>
+  <object id="46" name="Star" gid="15" x="191.692" y="64.4615" width="32" height="32"/>
+  <object id="47" name="Star" gid="15" x="257.077" y="64.4615" width="32" height="32"/>
+  <object id="48" name="Star" gid="15" x="318.615" y="64.4615" width="32" height="32"/>
+  <object id="49" name="Star" gid="15" x="478.615" y="126.769" width="32" height="32"/>
+  <object id="50" name="Star" gid="15" x="157.846" y="253.692" width="32" height="32"/>
+  <object id="51" name="Star" gid="15" x="160.154" y="352.923" width="32" height="32"/>
+  <object id="54" name="Star" gid="15" x="190.923" y="352.154" width="32" height="32"/>
+  <object id="58" name="Star" gid="15" x="223.231" y="352.923" width="32" height="32"/>
+  <object id="59" name="Star" gid="15" x="255.538" y="352.923" width="32" height="32"/>
+  <object id="60" name="Star" gid="15" x="286.308" y="352.923" width="32" height="32"/>
+  <object id="63" name="Star" gid="15" x="287.077" y="320.615" width="32" height="32"/>
+  <object id="64" name="Star" gid="15" x="545.538" y="315.231" width="32" height="32"/>
+  <object id="66" name="Star" gid="15" x="670.154" y="222.923" width="32" height="32"/>
+  <object id="67" name="Star" gid="15" x="672.462" y="99.8462" width="32" height="32"/>
+  <object id="69" name="Star" gid="15" x="829.385" y="94.4615" width="32" height="32"/>
+  <object id="68" name="Star" gid="15" x="799.385" y="93.6923" width="32" height="32"/>
+  <object id="65" name="Star" gid="15" x="545.538" y="288.308" width="32" height="32"/>
+  <object id="62" name="Star" gid="15" x="257.077" y="320.615" width="32" height="32"/>
+  <object id="61" name="Star" gid="15" x="226.308" y="319.846" width="32" height="32"/>
+  <object id="57" name="Star" gid="15" x="191.692" y="320.615" width="32" height="32"/>
+  <object id="52" name="Star" gid="15" x="159.385" y="319.846" width="32" height="32"/>
+  <object id="53" name="Star" gid="15" x="159.385" y="319.846" width="32" height="32"/>
+  <object id="45" name="Star" gid="15" x="126.308" y="66" width="32" height="32"/>
+  <object id="41" name="Star" gid="15" x="0.153846" y="222.154" width="32" height="32"/>
  </objectgroup>
 </map>
