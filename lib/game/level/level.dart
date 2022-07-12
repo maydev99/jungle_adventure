@@ -99,6 +99,8 @@ class Level extends Component with HasGameRef<JungleGame> {
               size: size);
           add(enemy);
           break;
+
+
       }
     }
   }

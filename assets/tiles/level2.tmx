@@ -38,7 +38,7 @@
   <object id="2" name="Key" gid="6" x="543.375" y="33.8661" width="32" height="32"/>
   <object id="3" name="Door" gid="16" x="928.218" y="95.4046" width="32" height="32">
    <properties>
-    <property name="NextLevel" value="level1.tmx"/>
+    <property name="NextLevel" value="level3.tmx"/>
    </properties>
   </object>
   <object id="29" name="Enemy" gid="7" x="384" y="256" width="32" height="32">

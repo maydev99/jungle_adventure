@@ -27,7 +27,7 @@ class JungleGame extends FlameGame with HasCollisionDetection, HasTappableCompon
     spriteSheet = await images.load('spritesheet2.png');
 
     camera.viewport = FixedResolutionViewport(Vector2(600,300));
-    loadLevel('level2.tmx');
+    loadLevel('level3.tmx');
 
     add(Hud(priority: 1));
 

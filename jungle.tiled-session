@@ -49,11 +49,27 @@
             }
         },
         "assets/tiles/level2.tmx": {
+            "expandedObjectLayers": [
+                3,
+                2
+            ],
             "scale": 1.3,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 479.99999999999994,
-                "y": 192.69230769230768
+                "x": 780.7692307692307,
+                "y": 370.38461538461536
+            }
+        },
+        "assets/tiles/level3.tmx": {
+            "expandedObjectLayers": [
+                3,
+                2
+            ],
+            "scale": 1.3082291666666668,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 480.0382196034716,
+                "y": 238.87252169758733
             }
         },
         "assets/tiles/light.tsx": {
@@ -97,7 +113,7 @@
         "assets/tiles/spritesheet2.tsx"
     ],
     "project": "jungle.tiled-project",
-    "property.type": "object",
+    "property.type": "string",
     "recentFiles": [
         "assets/tiles/level1.tmx",
         "assets/tiles/spritesheet2.tsx",
