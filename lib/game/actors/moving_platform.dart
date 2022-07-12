@@ -6,11 +6,11 @@ import 'package:jungle_adventure/game/jungle_game.dart';
 import 'package:jungle_adventure/game/actors/player.dart';
 
 
-class Enemy extends SpriteComponent
+class MovingPlatform extends SpriteComponent
     with CollisionCallbacks, HasGameRef<JungleGame> {
 
   static final Vector2 _up = Vector2(0, -1);
-  Enemy(
+  MovingPlatform(
       Image image, {
         Vector2? srcPosition,
         Vector2? srcSize,
@@ -22,8 +22,8 @@ class Enemy extends SpriteComponent
         Anchor? anchor,
         int? priority,
       }) : super.fromImage(image,
-      srcPosition: Vector2(2 * 32, 33),
-      srcSize: Vector2(32, 30),
+      srcPosition: Vector2(3 * 32, 32),
+      srcSize: Vector2.all(32),
       position: position,
       size: size,
       scale: scale,
@@ -60,7 +60,8 @@ class Enemy extends SpriteComponent
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (other is Player) {
-      final playerDir = (other.absoluteCenter - absoluteCenter).normalized();
+
+      /*final playerDir = (other.absoluteCenter - absoluteCenter).normalized();
 
       if(playerDir.dot(_up) > 0.85) {
         add(
@@ -75,8 +76,8 @@ class Enemy extends SpriteComponent
         other.hit();
         if (gameRef.playerData.health.value > 0) {
           gameRef.playerData.health.value -= 1;
-       }
-      }
+        }
+      }*/
 
 
     }

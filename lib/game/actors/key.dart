@@ -21,7 +21,7 @@ class Key extends SpriteComponent with CollisionCallbacks, HasGameRef<JungleGame
       }) : super.fromImage(
     image,
     srcPosition: Vector2(32, 32),
-    srcSize: Vector2.all(32),
+    srcSize: Vector2.all(30),
     position: position,
     size: size,
     scale: scale,

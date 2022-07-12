@@ -2,6 +2,7 @@ import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:jungle_adventure/game/game_screen.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
 
 Future<void> main() async {
@@ -26,10 +27,10 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: GameWidget(game: kDebugMode ? JungleGame() : _game),
-      ),
-    );
+      home: const Scaffold(
+        body:  GameScreen()),
+      );
+
   }
 }
 

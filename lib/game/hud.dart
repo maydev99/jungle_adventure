@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flame/components.dart';
 import 'package:flame/input.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
+import 'package:jungle_adventure/overlays/pause_overlay.dart';
 
 class Hud extends Component with HasGameRef<JungleGame> {
   late bool hasKey;
@@ -32,7 +33,7 @@ class Hud extends Component with HasGameRef<JungleGame> {
     keySprite = SpriteComponent.fromImage(
       gameRef.spriteSheet,
       srcPosition: Vector2(32, 32),
-      srcSize: Vector2.all(30),
+      srcSize: Vector2.all(32),
       size: Vector2.all(20),
       anchor: Anchor.topRight,
       position: Vector2(
@@ -42,10 +43,10 @@ class Hud extends Component with HasGameRef<JungleGame> {
 
 
 
-    /*final pauseButton = SpriteButtonComponent(
+    final pauseButton = SpriteButtonComponent(
       onPressed: () {
-        //gameRef.pauseEngine();
-        //gameRef.overlays.add(PauseMenu.id);
+        gameRef.pauseEngine();
+        gameRef.overlays.add(PauseOverlay.id);
       },
       button: Sprite(
         gameRef.spriteSheet,
@@ -56,7 +57,7 @@ class Hud extends Component with HasGameRef<JungleGame> {
       anchor: Anchor.topCenter,
       position: Vector2(gameRef.size.x / 2, 5),
     )..positionType = PositionType.viewport;
-    add(pauseButton);*/
+    add(pauseButton);
 
 
 

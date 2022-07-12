@@ -1,6 +1,7 @@
 import 'package:flame/components.dart';
 import 'package:flame/extensions.dart';
 import 'package:flame_tiled/flame_tiled.dart';
+import 'package:jungle_adventure/game/actors/moving_platform.dart';
 
 import 'package:jungle_adventure/game/jungle_game.dart';
 import 'package:jungle_adventure/game/actors/player.dart';
@@ -98,6 +99,16 @@ class Level extends Component with HasGameRef<JungleGame> {
               targetPosition: Vector2(target.x, target.y),
               size: size);
           add(enemy);
+          break;
+
+        case 'MovingPlatform':
+          final targetObjectId = int.parse(spawnPoint.properties.first.value);
+          final target = spawnPointsLayer.objects.firstWhere((object) => object.id == targetObjectId);
+          final movingPlatform = MovingPlatform(gameRef.spriteSheet,
+              position: position,
+              targetPosition: Vector2(target.x, target.y),
+              size: size);
+          add(movingPlatform);
           break;
 
 

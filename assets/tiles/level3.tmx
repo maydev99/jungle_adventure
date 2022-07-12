@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="29">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="33">
  <tileset firstgid="1" source="spritesheet2.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="12">
   <data encoding="base64">
@@ -16,14 +16,15 @@
   <object id="26" x="800.318" y="287.411" width="32.1045" height="29.8113"/>
   <object id="27" x="353.149" y="286.647" width="30.5757" height="33.6333"/>
   <object id="28" x="777.387" y="-116.952"/>
+  <object id="30" x="646.676" y="154.407"/>
  </objectgroup>
  <objectgroup id="2" name="SpawnLayer">
-  <object id="9" name="MovingPlatform" gid="8" x="864.58" y="255.255" width="32" height="32">
+  <object id="9" name="MovingPlatform" gid="8" x="866.004" y="256.784" width="31.3401" height="32.7644">
    <properties>
     <property name="Target" type="object" value="10"/>
    </properties>
   </object>
-  <object id="10" x="64.2089" y="188.805">
+  <object id="10" x="45.8635" y="223.967">
    <point/>
   </object>
   <object id="11" name="Enemy" gid="7" x="288.228" y="352.333" width="32" height="32">
@@ -67,7 +68,7 @@
   <object id="19" x="193.391" y="319.516">
    <point/>
   </object>
-  <object id="20" name="Player" gid="12" x="-2.24094" y="223.915" width="32" height="32"/>
+  <object id="20" name="Player" gid="12" x="0.816626" y="217.8" width="32" height="32"/>
   <object id="21" name="Door" gid="16" x="927.26" y="224.679" width="32" height="32">
    <properties>
     <property name="NextLevel" value="level1.tmx"/>
