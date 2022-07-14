@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
+import 'package:jungle_adventure/overlays/hud_overlay.dart';
 import 'package:logger/logger.dart';
 
 
@@ -48,15 +49,15 @@ class PauseOverlayState extends State<PauseOverlay> {
               direction: Axis.vertical,
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                Text('Paused',
-                    style: GoogleFonts.luckiestGuy(
+                Text('Game Paused',
+                    style: GoogleFonts.chewy(
                         textStyle: const TextStyle(
-                            color: Colors.yellow, fontSize: 50))),
+                            color: Colors.greenAccent, fontSize: 50))),
                 MaterialButton(
                   onPressed: () {
                     gameRef.overlays.remove(PauseOverlay.id);
                     gameRef.resumeEngine();
-                    //gameRef.overlays.add(Hud.id);
+                    gameRef.overlays.add(HudOverlay.id);
 
                     //AudioManager.instance.resumeBgm();
                     // createGeneralNotification();

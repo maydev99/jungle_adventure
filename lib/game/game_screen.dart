@@ -2,7 +2,9 @@
 
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+
 import 'package:jungle_adventure/game/jungle_game.dart';
+import 'package:jungle_adventure/overlays/hud_overlay.dart';
 
 import '../overlays/pause_overlay.dart';
 
@@ -32,11 +34,12 @@ class GameScreenState extends State<GameScreen> {
           home: Scaffold(
             body: GameWidget(
               overlayBuilderMap: {
-                PauseOverlay.id: (_, JungleGame gameRef) =>
-                    PauseOverlay(gameRef: _gameMain),
+                PauseOverlay.id: (_, JungleGame gameRef) =>PauseOverlay(gameRef: _gameMain),
+                HudOverlay.id: (_, JungleGame gameRef) => HudOverlay(gameRef: _gameMain)
+
 
               },
-              //initialActiveOverlays: const [GameStart.id],
+              initialActiveOverlays: const [HudOverlay.id],
               game: _gameMain,
             ),
           )),

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="83">
+ <tileset firstgid="1" source="spritesheet2.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="30" height="12">
+  <data encoding="base64">
+   CwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAALAAAACAAAAAsAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAgAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAA
+  </data>
+ </layer>
+ <objectgroup id="2" name="PlatformsLayer">
+  <object id="6" x="1.52878" y="32.8689" width="29.0469" height="220.145"/>
+  <object id="7" x="32.8689" y="64.9733" width="191.098" height="29.8113"/>
+  <object id="8" x="32.1045" y="224.731" width="191.862" height="30.5757"/>
+  <object id="9" x="227.024" y="226.26" width="28.2825" height="90.9627"/>
+  <object id="10" x="1.52878" y="352.385" width="956.254" height="29.8113"/>
+  <object id="11" x="257.6" y="288.94" width="636.739" height="28.2825"/>
+  <object id="12" x="928.736" y="223.967" width="31.3401" height="29.8113"/>
+  <object id="13" x="927.972" y="95.549" width="30.5757" height="29.8113"/>
+  <object id="14" x="97.8422" y="158.994" width="157.465" height="32.1045"/>
+  <object id="15" x="225.496" y="129.182" width="61.9158" height="29.0469"/>
+  <object id="16" x="353.914" y="223.967" width="93.2558" height="29.8113"/>
+  <object id="17" x="416.594" y="191.862" width="29.8113" height="31.3401"/>
+  <object id="18" x="544.247" y="63.4445" width="318.751" height="32.8689"/>
+  <object id="19" x="833.187" y="97.0778" width="29.0469" height="191.098"/>
+  <object id="20" x="862.999" y="158.994" width="31.3401" height="31.3401"/>
+  <object id="21" x="545.012" y="129.182" width="189.569" height="29.0469"/>
+  <object id="22" x="545.776" y="191.862" width="188.04" height="32.1045"/>
+  <object id="23" x="353.149" y="64.2089" width="92.4914" height="29.8113"/>
+  <object id="24" x="416.594" y="96.3134" width="93.2558" height="29.0469"/>
+  <object id="25" x="480.038" y="32.8689" width="31.3401" height="61.9158"/>
+  <object id="26" x="417.358" y="33.6333" width="30.5757" height="31.3401"/>
+  <object id="65" x="32.1045" y="288.176" width="30.5757" height="30.5757"/>
+  <object id="66" x="129.182" y="288.94" width="30.5757" height="30.5757"/>
+ </objectgroup>
+ <objectgroup id="3" name="SpawnLayer">
+  <object id="1" name="Key" gid="6" x="447.986" y="94.7324" width="32" height="32"/>
+  <object id="2" name="Door" gid="16" x="0.816626" y="32.8166" width="32" height="32">
+   <properties>
+    <property name="NextLevel" value="level1.tmx"/>
+   </properties>
+  </object>
+  <object id="4" name="Player" gid="12" x="-0.712159" y="347.746" width="32" height="32"/>
+  <object id="27" name="Star" gid="15" x="702.529" y="191.046" width="32" height="32"/>
+  <object id="35" name="Star" gid="15" x="863.051" y="157.413" width="32" height="32"/>
+  <object id="36" name="Star" gid="15" x="65.0256" y="350.039" width="32" height="32"/>
+  <object id="37" name="Star" gid="15" x="191.15" y="285.83" width="32" height="32"/>
+  <object id="49" name="Star" gid="15" x="863.815" y="288.124" width="32" height="32"/>
+  <object id="50" name="Star" gid="15" x="927.26" y="223.915" width="32" height="32"/>
+  <object id="51" name="Star" gid="15" x="927.26" y="95.4968" width="32" height="32"/>
+  <object id="52" name="Star" gid="15" x="797.313" y="66.4499" width="32" height="32"/>
+  <object id="53" name="Star" gid="15" x="736.926" y="64.1567" width="32" height="32"/>
+  <object id="54" name="Star" gid="15" x="386.835" y="224.679" width="32" height="32"/>
+  <object id="61" name="Star" gid="15" x="386.835" y="224.679" width="32" height="32"/>
+  <object id="62" name="Star" gid="15" x="193.443" y="158.177" width="32" height="32"/>
+  <object id="63" name="Star" gid="15" x="126.177" y="64.1567" width="32" height="32"/>
+  <object id="64" name="Star" gid="15" x="29.0991" y="65.6855" width="32" height="32"/>
+  <object id="60" name="Star" gid="15" x="33.6855" y="223.915" width="32" height="32"/>
+  <object id="59" name="Star" gid="15" x="480.855" y="255.255" width="32" height="32"/>
+  <object id="57" name="Star" gid="15" x="451.044" y="288.888" width="32" height="32"/>
+  <object id="58" name="Star" gid="15" x="451.044" y="288.888" width="32" height="32"/>
+  <object id="56" name="Star" gid="15" x="509.137" y="288.124" width="32" height="32"/>
+  <object id="55" name="Star" gid="15" x="481.619" y="288.888" width="32" height="32"/>
+  <object id="48" name="Star" gid="15" x="128.47" y="288.124" width="32" height="32"/>
+  <object id="38" name="Star" gid="15" x="286.699" y="351.568" width="32" height="32"/>
+  <object id="39" name="Star" gid="15" x="353.201" y="350.804" width="32" height="32"/>
+  <object id="40" name="Star" gid="15" x="418.175" y="351.568" width="32" height="32"/>
+  <object id="41" name="Star" gid="15" x="481.619" y="350.804" width="32" height="32"/>
+  <object id="42" name="Star" gid="15" x="544.299" y="350.804" width="32" height="32"/>
+  <object id="43" name="Star" gid="15" x="610.801" y="350.804" width="32" height="32"/>
+  <object id="44" name="Star" gid="15" x="673.482" y="350.804" width="32" height="32"/>
+  <object id="45" name="Star" gid="15" x="735.397" y="352.333" width="32" height="32"/>
+  <object id="46" name="Star" gid="15" x="802.664" y="350.039" width="32" height="32"/>
+  <object id="47" name="Star" gid="15" x="865.344" y="350.804" width="32" height="32"/>
+  <object id="30" name="Star" gid="15" x="545.064" y="191.046" width="32" height="32"/>
+  <object id="31" name="Star" gid="15" x="670.424" y="190.281" width="32" height="32"/>
+  <object id="32" name="Star" gid="15" x="639.848" y="191.81" width="32" height="32"/>
+  <object id="33" name="Star" gid="15" x="607.744" y="191.81" width="32" height="32"/>
+  <object id="34" name="Star" gid="15" x="576.404" y="191.81" width="32" height="32"/>
+  <object id="67" x="-3.05757" y="317.223">
+   <point/>
+  </object>
+  <object id="68" name="Enemy" gid="7" x="318.804" y="352.333" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="67"/>
+   </properties>
+  </object>
+  <object id="70" name="Enemy" gid="7" x="256.124" y="286.595" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="81"/>
+   </properties>
+  </object>
+  <object id="72" name="Enemy" gid="7" x="765.209" y="289.652" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="82"/>
+   </properties>
+  </object>
+  <object id="73" name="Enemy" gid="7" x="224.019" y="128.366" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="78"/>
+   </properties>
+  </object>
+  <object id="74" name="Enemy" gid="7" x="65.0256" y="64.1567" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="77"/>
+   </properties>
+  </object>
+  <object id="75" name="Enemy" gid="7" x="383.777" y="64.9211" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="79"/>
+   </properties>
+  </object>
+  <object id="76" name="Enemy" gid="7" x="641.377" y="62.6279" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="80"/>
+   </properties>
+  </object>
+  <object id="71" name="Enemy" gid="7" x="668.895" y="288.888" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="82"/>
+   </properties>
+  </object>
+  <object id="77" x="191.098" y="29.0469">
+   <point/>
+  </object>
+  <object id="78" x="256.071" y="94.0202">
+   <point/>
+  </object>
+  <object id="79" x="351.62" y="29.0469">
+   <point/>
+  </object>
+  <object id="80" x="830.894" y="32.1045">
+   <point/>
+  </object>
+  <object id="81" x="798.79" y="254.543">
+   <point/>
+  </object>
+  <object id="82" x="320.28" y="256.071">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

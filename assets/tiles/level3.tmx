@@ -12,11 +12,8 @@
   <object id="5" x="3.82196" y="353.149" width="895.868" height="28.2825"/>
   <object id="23" x="385.254" y="256.836" width="29.0469" height="29.0469"/>
   <object id="24" x="833.187" y="256.071" width="29.0469" height="31.3401"/>
-  <object id="25" x="580.174" y="-287.411"/>
   <object id="26" x="800.318" y="287.411" width="32.1045" height="29.8113"/>
   <object id="27" x="353.149" y="286.647" width="30.5757" height="33.6333"/>
-  <object id="28" x="777.387" y="-116.952"/>
-  <object id="30" x="646.676" y="154.407"/>
  </objectgroup>
  <objectgroup id="2" name="SpawnLayer">
   <object id="9" name="MovingPlatform" gid="8" x="866.004" y="256.784" width="31.3401" height="32.7644">
@@ -68,10 +65,10 @@
   <object id="19" x="193.391" y="319.516">
    <point/>
   </object>
-  <object id="20" name="Player" gid="12" x="0.816626" y="217.8" width="32" height="32"/>
+  <object id="20" name="Player" gid="12" x="-1.47655" y="188.753" width="32" height="32"/>
   <object id="21" name="Door" gid="16" x="927.26" y="224.679" width="32" height="32">
    <properties>
-    <property name="NextLevel" value="level1.tmx"/>
+    <property name="NextLevel" value="level4.tmx"/>
    </properties>
   </object>
   <object id="22" name="Key" gid="6" x="447.986" y="225.443" width="32" height="32"/>

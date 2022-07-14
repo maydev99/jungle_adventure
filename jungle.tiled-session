@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "assets/tiles/level1.tmx",
+    "activeFile": "assets/tiles/level3.tmx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -38,8 +38,8 @@
         },
         "assets/tiles/level1.tmx": {
             "expandedObjectLayers": [
-                3,
-                2
+                2,
+                3
             ],
             "scale": 1.3082291666666668,
             "selectedLayer": 2,
@@ -50,8 +50,8 @@
         },
         "assets/tiles/level2.tmx": {
             "expandedObjectLayers": [
-                3,
-                2
+                2,
+                3
             ],
             "scale": 1.3,
             "selectedLayer": 2,
@@ -62,14 +62,26 @@
         },
         "assets/tiles/level3.tmx": {
             "expandedObjectLayers": [
-                3,
-                2
+                2,
+                3
+            ],
+            "scale": 1.3082291666666668,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 479.2738275340393,
+                "y": 238.87252169758733
+            }
+        },
+        "assets/tiles/level4.tmx": {
+            "expandedObjectLayers": [
+                2,
+                3
             ],
             "scale": 1.3082291666666668,
             "selectedLayer": 2,
             "viewCenter": {
                 "x": 480.0382196034716,
-                "y": 238.87252169758733
+                "y": 192.24460546221826
             }
         },
         "assets/tiles/light.tsx": {
@@ -109,14 +121,19 @@
     "map.tileWidth": 32,
     "map.width": 30,
     "openFiles": [
+        "assets/tiles/spritesheet2.tsx",
+        "assets/tiles/spritesheet2.tsx",
         "assets/tiles/level1.tmx",
-        "assets/tiles/spritesheet2.tsx"
+        "assets/tiles/level2.tmx",
+        "assets/tiles/level3.tmx"
     ],
     "project": "jungle.tiled-project",
     "property.type": "object",
     "recentFiles": [
-        "assets/tiles/level1.tmx",
         "assets/tiles/spritesheet2.tsx",
+        "assets/tiles/level1.tmx",
+        "assets/tiles/level2.tmx",
+        "assets/tiles/level3.tmx",
         "assets/tiles/items.tsx",
         "assets/tiles/wierd_lamp.tsx",
         "assets/images/player_sprite.tsx",
@@ -124,9 +141,7 @@
         "assets/tiles/weird_lamp_2.tsx",
         "assets/tiles/color_squares.tsx",
         "assets/tiles/grey_brick_32_B.tsx",
-        "assets/tiles/grey_brick_32.tsx",
-        "assets/tiles/pixel_art_forest.tsx",
-        "assets/tiles/spritesheet.tsx"
+        "assets/tiles/grey_brick_32.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.margin": 0,

@@ -1,19 +1,16 @@
 import 'dart:ui';
-import 'package:flame/components.dart';
 import 'package:flame/experimental.dart';
-import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
-import 'package:flame/input.dart';
 import 'package:jungle_adventure/game/data/player_data.dart';
-import 'package:jungle_adventure/game/hud.dart';
+
 import 'package:jungle_adventure/game/level/level.dart';
 import 'package:jungle_adventure/game/tap_component.dart';
+import 'package:jungle_adventure/overlays/hud_overlay.dart';
 
 import '../overlays/pause_overlay.dart';
 
-
-
-class JungleGame extends FlameGame with HasCollisionDetection, HasTappableComponents, HasTappablesBridge {
+class JungleGame extends FlameGame
+    with HasCollisionDetection, HasTappableComponents, HasTappablesBridge {
   Level? _currentLevel;
   late Image spriteSheet;
   late Image items;
@@ -28,14 +25,13 @@ class JungleGame extends FlameGame with HasCollisionDetection, HasTappableCompon
     screenX = size.x;
     screenY = size.y;
 
-
     spriteSheet = await images.load('spritesheet2.png');
 
-    camera.viewport = FixedResolutionViewport(Vector2(600,300));
-    loadLevel('level3.tmx');
+    camera.viewport = FixedResolutionViewport(Vector2(600, 300));
+    loadLevel('level4.tmx');
 
-    add(Hud(priority: 1));
 
+    overlays.add(HudOverlay.id);
 
     return super.onLoad();
   }
@@ -44,17 +40,14 @@ class JungleGame extends FlameGame with HasCollisionDetection, HasTappableCompon
   void onMount() {
     tapComponent = TapComponent(size.x, size.y, screenX, screenY);
     add(tapComponent);
+
     super.onMount();
   }
 
   @override
   void update(double dt) {
-
     super.update(dt);
   }
-
-
-
 
   void loadLevel(String levelName) {
     _currentLevel?.removeFromParent();
@@ -66,16 +59,13 @@ class JungleGame extends FlameGame with HasCollisionDetection, HasTappableCompon
   void lifecycleStateChange(AppLifecycleState state) {
     switch (state) {
       case AppLifecycleState.resumed:
-        resumeEngine();
-        /*if (!(overlays.isActive(PauseOverlay.id)) &&
-            !(overlays.isActive(GameOver.id))) {
-
-
-        }*/
+        if (!(overlays.isActive(PauseOverlay.id)) &&
+            !(overlays.isActive(PauseOverlay.id))) {
+          resumeEngine();
+        }
 
         break;
       case AppLifecycleState.paused:
-          pauseEngine();
 
 
         break;
@@ -84,14 +74,12 @@ class JungleGame extends FlameGame with HasCollisionDetection, HasTappableCompon
         pauseEngine();
         break;
       case AppLifecycleState.inactive:
-        overlays.add(PauseOverlay.id);
+        if (overlays.isActive(HudOverlay.id)) {
+          overlays.remove(HudOverlay.id);
+          overlays.add(PauseOverlay.id);
+        }
+
         pauseEngine();
-        /*if (overlays.isActive(Hud.id)) {
-          //overlays.remove(Hud.id);
-
-        }*/
-
-
 
         break;
     }
