@@ -6,6 +6,7 @@ import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
 import 'package:flame/input.dart';
 import 'package:flutter/services.dart';
+import 'package:jungle_adventure/game/actors/moving_platform.dart';
 import 'package:jungle_adventure/game/actors/platform.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
 
@@ -130,6 +131,11 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler, H
 
         position += collisionNormal.scaled(separationDistance);
       }
+    }
+
+    if(other is MovingPlatform) {
+      double centerPlatformWidth = other.width / 2;
+      position.x = other.position.x + centerPlatformWidth;
     }
     super.onCollision(intersectionPoints, other);
   }

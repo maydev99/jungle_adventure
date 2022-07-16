@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="83">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="94">
  <tileset firstgid="1" source="spritesheet2.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="12">
   <data encoding="base64">
@@ -46,14 +46,22 @@
   <object id="49" name="Star" gid="15" x="863.815" y="288.124" width="32" height="32"/>
   <object id="50" name="Star" gid="15" x="927.26" y="223.915" width="32" height="32"/>
   <object id="51" name="Star" gid="15" x="927.26" y="95.4968" width="32" height="32"/>
-  <object id="52" name="Star" gid="15" x="797.313" y="66.4499" width="32" height="32"/>
+  <object id="52" name="Star" gid="15" x="797.313" y="64.1567" width="32" height="32"/>
   <object id="53" name="Star" gid="15" x="736.926" y="64.1567" width="32" height="32"/>
+  <object id="92" name="Star" gid="15" x="704.057" y="63.3923" width="32" height="32"/>
+  <object id="93" name="Star" gid="15" x="765.973" y="62.6279" width="32" height="32"/>
   <object id="54" name="Star" gid="15" x="386.835" y="224.679" width="32" height="32"/>
   <object id="61" name="Star" gid="15" x="386.835" y="224.679" width="32" height="32"/>
   <object id="62" name="Star" gid="15" x="193.443" y="158.177" width="32" height="32"/>
   <object id="63" name="Star" gid="15" x="126.177" y="64.1567" width="32" height="32"/>
   <object id="64" name="Star" gid="15" x="29.0991" y="65.6855" width="32" height="32"/>
   <object id="60" name="Star" gid="15" x="33.6855" y="223.915" width="32" height="32"/>
+  <object id="83" name="Star" gid="15" x="65.0256" y="224.679" width="32" height="32"/>
+  <object id="84" name="Star" gid="15" x="96.3656" y="224.679" width="32" height="32"/>
+  <object id="88" name="Star" gid="15" x="128.47" y="225.443" width="32" height="32"/>
+  <object id="89" name="Star" gid="15" x="158.281" y="225.443" width="32" height="32"/>
+  <object id="90" name="Star" gid="15" x="190.386" y="224.679" width="32" height="32"/>
+  <object id="91" name="Star" gid="15" x="224.784" y="223.915" width="32" height="32"/>
   <object id="59" name="Star" gid="15" x="480.855" y="255.255" width="32" height="32"/>
   <object id="57" name="Star" gid="15" x="451.044" y="288.888" width="32" height="32"/>
   <object id="58" name="Star" gid="15" x="451.044" y="288.888" width="32" height="32"/>
@@ -93,7 +101,7 @@
     <property name="Target" type="object" value="82"/>
    </properties>
   </object>
-  <object id="73" name="Enemy" gid="7" x="224.019" y="128.366" width="32" height="32">
+  <object id="73" name="Enemy" gid="7" x="97.13" y="157.413" width="32" height="32">
    <properties>
     <property name="Target" type="object" value="78"/>
    </properties>
@@ -121,7 +129,7 @@
   <object id="77" x="191.098" y="29.0469">
    <point/>
   </object>
-  <object id="78" x="256.071" y="94.0202">
+  <object id="78" x="193.391" y="130.711">
    <point/>
   </object>
   <object id="79" x="351.62" y="29.0469">

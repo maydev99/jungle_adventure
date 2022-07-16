@@ -57,7 +57,8 @@ class Star extends SpriteComponent
         }),
       );
 
-      gameRef.playerData.score.value += 1;
+      gameRef.playerData.score.value += 5;
+      gameRef.playerData.bonusLifePointCount.value += 5;
     }
     super.onCollisionStart(intersectionPoints, other);
   }

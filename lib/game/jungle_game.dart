@@ -5,6 +5,7 @@ import 'package:jungle_adventure/game/data/player_data.dart';
 
 import 'package:jungle_adventure/game/level/level.dart';
 import 'package:jungle_adventure/game/tap_component.dart';
+import 'package:jungle_adventure/overlays/game_over_overlay.dart';
 import 'package:jungle_adventure/overlays/hud_overlay.dart';
 
 import '../overlays/pause_overlay.dart';
@@ -28,7 +29,7 @@ class JungleGame extends FlameGame
     spriteSheet = await images.load('spritesheet2.png');
 
     camera.viewport = FixedResolutionViewport(Vector2(600, 300));
-    loadLevel('level4.tmx');
+    loadLevel('level3.tmx');
 
 
     overlays.add(HudOverlay.id);
@@ -46,6 +47,18 @@ class JungleGame extends FlameGame
 
   @override
   void update(double dt) {
+    int lives =  playerData.health.value;
+    int bonusLifePointCount = playerData.bonusLifePointCount.value;
+    if(lives < 1) {
+      pauseEngine();
+      overlays.add(GameOverOverlay.id);
+    }
+    //print(bonusLifePointCount);
+    if(bonusLifePointCount >= 100) {
+
+      playerData.health.value += 1;
+      playerData.bonusLifePointCount.value = 0;
+    }
     super.update(dt);
   }
 
@@ -53,6 +66,12 @@ class JungleGame extends FlameGame
     _currentLevel?.removeFromParent();
     _currentLevel = Level(levelName);
     add(_currentLevel!);
+  }
+
+  void restartGame() {
+    playerData.health.value = 5;
+    playerData.key.value = false;
+    playerData.score.value = 0;
   }
 
   @override

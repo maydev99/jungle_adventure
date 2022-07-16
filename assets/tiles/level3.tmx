@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="33">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="47">
  <tileset firstgid="1" source="spritesheet2.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="12">
   <data encoding="base64">
@@ -16,11 +16,6 @@
   <object id="27" x="353.149" y="286.647" width="30.5757" height="33.6333"/>
  </objectgroup>
  <objectgroup id="2" name="SpawnLayer">
-  <object id="9" name="MovingPlatform" gid="8" x="866.004" y="256.784" width="31.3401" height="32.7644">
-   <properties>
-    <property name="Target" type="object" value="10"/>
-   </properties>
-  </object>
   <object id="10" x="45.8635" y="223.967">
    <point/>
   </object>
@@ -72,5 +67,10 @@
    </properties>
   </object>
   <object id="22" name="Key" gid="6" x="447.986" y="225.443" width="32" height="32"/>
+  <object id="44" name="MovingPlatform" gid="8" x="798.078" y="256.019" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="10"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

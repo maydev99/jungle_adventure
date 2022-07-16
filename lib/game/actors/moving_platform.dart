@@ -2,28 +2,29 @@ import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
+import 'package:jungle_adventure/game/actors/platform.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
 import 'package:jungle_adventure/game/actors/player.dart';
 
 
 class MovingPlatform extends SpriteComponent
-    with CollisionCallbacks, HasGameRef<JungleGame> {
+    with CollisionCallbacks, HasGameRef<JungleGame> implements Platform {
 
   static final Vector2 _up = Vector2(0, -1);
-  MovingPlatform(
-      Image image, {
-        Vector2? srcPosition,
-        Vector2? srcSize,
-        Vector2? targetPosition,
-        Vector2? position,
-        Vector2? size,
-        Vector2? scale,
-        double? angle,
-        Anchor? anchor,
-        int? priority,
-      }) : super.fromImage(image,
+
+  MovingPlatform(Image image, {
+    Vector2? srcPosition,
+    Vector2? srcSize,
+    Vector2? targetPosition,
+    Vector2? position,
+    Vector2? size,
+    Vector2? scale,
+    double? angle,
+    Anchor? anchor,
+    int? priority,
+  }) : super.fromImage(image,
       srcPosition: Vector2(3 * 32, 32),
-      srcSize: Vector2.all(32),
+      srcSize: Vector2(32, 30),
       position: position,
       size: size,
       scale: scale,
@@ -31,16 +32,15 @@ class MovingPlatform extends SpriteComponent
       anchor: anchor,
       priority: priority) {
     if (targetPosition != null && position != null) {
-
       final effect = SequenceEffect(
         [
           MoveToEffect(targetPosition, EffectController(speed: 100),
               onComplete: () {
-                flipHorizontallyAroundCenter();
+                //flipHorizontallyAroundCenter();
               }),
           MoveToEffect(position + Vector2(32, 0), EffectController(speed: 100),
               onComplete: () {
-                flipHorizontallyAroundCenter();
+                //flipHorizontallyAroundCenter();
               })
         ],
         infinite: true,
@@ -52,26 +52,26 @@ class MovingPlatform extends SpriteComponent
 
   @override
   Future<void>? onLoad() {
-    add(CircleHitbox()..collisionType = CollisionType.passive);
+    add(CircleHitbox()
+      ..collisionType = CollisionType.passive);
     return super.onLoad();
   }
 
   @override
-  void onCollisionStart(
-      Set<Vector2> intersectionPoints, PositionComponent other) {
+  void onCollisionStart(Set<Vector2> intersectionPoints,
+      PositionComponent other) {
     if (other is Player) {
+    //  final playerDir = (other.absoluteCenter - absoluteCenter).normalized();
 
-      /*final playerDir = (other.absoluteCenter - absoluteCenter).normalized();
-
-      if(playerDir.dot(_up) > 0.85) {
-        add(
+     // if (playerDir.dot(_up) > 0.85) {
+        /* add(
           OpacityEffect.fadeOut(
             LinearEffectController(0.2),
             onComplete: () => removeFromParent(),
           ),
         );
-        gameRef.playerData.health.value += 1;
-        other.jump = true;
+      //  gameRef.playerData.health.value += 1;
+      //  other.jump = true;
       } else {
         other.hit();
         if (gameRef.playerData.health.value > 0) {
@@ -80,7 +80,7 @@ class MovingPlatform extends SpriteComponent
       }*/
 
 
+      }
+      super.onCollisionStart(intersectionPoints, other);
     }
-    super.onCollisionStart(intersectionPoints, other);
   }
-}
