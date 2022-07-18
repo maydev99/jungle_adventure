@@ -178,6 +178,11 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler, H
     }
   }
 
+  void teleportToPosition(Vector2 destination) {
+    position = Vector2(destination.x, destination.y);
+    _velocity.x = 0;
+  }
+
 }
 
 

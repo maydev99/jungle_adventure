@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="122">
+ <tileset firstgid="1" source="spritesheet2.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="30" height="12">
+  <data encoding="base64">
+   CwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACAAAAAsAAAAIAAAACAAAAAgAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAsAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAgAAAALAAAACAAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACAAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAA
+  </data>
+ </layer>
+ <objectgroup id="2" name="PlatformsLayer">
+  <object id="9" x="0" y="256" width="224" height="32"/>
+  <object id="10" x="0" y="352" width="960" height="32"/>
+  <object id="14" x="0" y="288" width="32" height="64"/>
+  <object id="15" x="192" y="288" width="32" height="64"/>
+  <object id="16" x="800" y="96" width="160" height="32"/>
+  <object id="27" x="0" y="32" width="96" height="32"/>
+  <object id="28" x="32" y="96" width="128" height="32"/>
+  <object id="29" x="0" y="160" width="96" height="32"/>
+  <object id="30" x="224" y="0" width="32" height="96"/>
+  <object id="31" x="192" y="64" width="32" height="128"/>
+  <object id="32" x="320" y="32" width="128"/>
+  <object id="33" x="480" y="32" width="160" height="32"/>
+  <object id="34" x="384" y="96" width="192" height="32"/>
+  <object id="35" x="384" y="224" width="192" height="32"/>
+  <object id="36" x="544" y="192" width="64" height="32"/>
+  <object id="37" x="544" y="128" width="32" height="64"/>
+  <object id="38" x="384" y="128" width="32" height="96"/>
+  <object id="39" x="448" y="256" width="64" height="64"/>
+  <object id="40" x="448" y="320" width="64" height="32"/>
+  <object id="41" x="288" y="256" width="64" height="32"/>
+  <object id="42" x="256" y="160" width="96" height="32"/>
+  <object id="43" x="224" y="320" width="32" height="32"/>
+  <object id="44" x="128" y="224" width="32" height="32"/>
+  <object id="45" x="608" y="128" width="32" height="32"/>
+  <object id="46" x="608" y="256" width="96" height="32"/>
+  <object id="47" x="800" y="224" width="32" height="32"/>
+  <object id="48" x="800" y="96" width="160" height="32"/>
+  <object id="49" x="928" y="128" width="32" height="160"/>
+  <object id="50" x="800" y="256" width="32" height="64"/>
+  <object id="51" x="800" y="320" width="32" height="32"/>
+  <object id="52" x="864" y="160" width="64" height="32"/>
+  <object id="53" x="320" y="32" width="128" height="32"/>
+  <object id="54" x="832" y="224" width="64" height="32"/>
+  <object id="55" x="864" y="256" width="32" height="64"/>
+  <object id="56" x="896" y="288" width="32" height="32"/>
+  <object id="57" x="928" y="288" width="32" height="32"/>
+  <object id="58" x="768" y="288" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup id="3" name="SpawnLayer">
+  <object id="1" name="Teleporter" gid="14" x="160" y="352" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="8"/>
+   </properties>
+  </object>
+  <object id="2" name="Player" gid="12" x="32" y="320" width="32" height="32"/>
+  <object id="4" name="Key" gid="6" x="512" y="160" width="32" height="32"/>
+  <object id="5" name="Teleporter" gid="14" x="832" y="32" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="17"/>
+   </properties>
+  </object>
+  <object id="6" name="Door" gid="16" x="928" y="352" width="32" height="32">
+   <properties>
+    <property name="NextLevel" value="level1.tmx"/>
+   </properties>
+  </object>
+  <object id="8" x="896" y="32">
+   <point/>
+  </object>
+  <object id="17" x="96" y="320">
+   <point/>
+  </object>
+  <object id="18" name="Teleporter" gid="14" x="832" y="288" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="26"/>
+   </properties>
+  </object>
+  <object id="19" name="Teleporter" gid="14" x="0" y="32" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="25"/>
+   </properties>
+  </object>
+  <object id="20" name="Teleporter" gid="14" x="0" y="256" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="24"/>
+   </properties>
+  </object>
+  <object id="23" name="Teleporter" gid="14" x="416" y="160" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="17"/>
+   </properties>
+  </object>
+  <object id="24" x="512" y="128">
+   <point/>
+  </object>
+  <object id="25" x="832" y="320">
+   <point/>
+  </object>
+  <object id="26" x="96" y="0">
+   <point/>
+  </object>
+  <object id="59" name="Star" gid="15" x="864" y="96" width="32" height="32"/>
+  <object id="70" name="Star" gid="15" x="832" y="96" width="32" height="32"/>
+  <object id="69" name="Star" gid="15" x="800" y="96" width="32" height="32"/>
+  <object id="68" name="Star" gid="15" x="608" y="352" width="32" height="32"/>
+  <object id="102" name="Star" gid="15" x="32" y="96" width="32" height="32"/>
+  <object id="85" name="Star" gid="15" x="416" y="224" width="32" height="32"/>
+  <object id="83" name="Star" gid="15" x="480" y="32" width="32" height="32"/>
+  <object id="89" name="Star" gid="15" x="512" y="192" width="32" height="32"/>
+  <object id="90" name="Star" gid="15" x="480" y="192" width="32" height="32"/>
+  <object id="99" name="Star" gid="15" x="480" y="160" width="32" height="32"/>
+  <object id="92" name="Star" gid="15" x="448" y="192" width="32" height="32"/>
+  <object id="93" name="Star" gid="15" x="448" y="160" width="32" height="32"/>
+  <object id="91" name="Star" gid="15" x="416" y="192" width="32" height="32"/>
+  <object id="82" name="Star" gid="15" x="448" y="32" width="32" height="32"/>
+  <object id="77" name="Star" gid="15" x="320" y="32" width="32" height="32"/>
+  <object id="81" name="Star" gid="15" x="512" y="32" width="32" height="32"/>
+  <object id="71" name="Star" gid="15" x="640" y="352" width="32" height="32"/>
+  <object id="103" name="Star" gid="15" x="64" y="96" width="32" height="32"/>
+  <object id="86" name="Star" gid="15" x="448" y="224" width="32" height="32"/>
+  <object id="76" name="Star" gid="15" x="352" y="32" width="32" height="32"/>
+  <object id="80" name="Star" gid="15" x="544" y="32" width="32" height="32"/>
+  <object id="72" name="Star" gid="15" x="672" y="352" width="32" height="32"/>
+  <object id="101" name="Star" gid="15" x="96" y="96" width="32" height="32"/>
+  <object id="107" name="Star" gid="15" x="384" y="352" width="32" height="32"/>
+  <object id="87" name="Star" gid="15" x="480" y="224" width="32" height="32"/>
+  <object id="75" name="Star" gid="15" x="384" y="32" width="32" height="32"/>
+  <object id="79" name="Star" gid="15" x="576" y="32" width="32" height="32"/>
+  <object id="73" name="Star" gid="15" x="704" y="352" width="32" height="32"/>
+  <object id="109" name="Star" gid="15" x="896" y="288" width="32" height="32"/>
+  <object id="110" name="Star" gid="15" x="896" y="256" width="32" height="32"/>
+  <object id="111" name="Star" gid="15" x="896" y="224" width="32" height="32"/>
+  <object id="100" name="Star" gid="15" x="128" y="96" width="32" height="32"/>
+  <object id="108" name="Star" gid="15" x="352" y="352" width="32" height="32"/>
+  <object id="106" name="Star" gid="15" x="416" y="352" width="32" height="32"/>
+  <object id="105" name="Star" gid="15" x="320" y="256" width="32" height="32"/>
+  <object id="104" name="Star" gid="15" x="288" y="256" width="32" height="32"/>
+  <object id="88" name="Star" gid="15" x="512" y="224" width="32" height="32"/>
+  <object id="74" name="Star" gid="15" x="416" y="32" width="32" height="32"/>
+  <object id="78" name="Star" gid="15" x="608" y="32" width="32" height="32"/>
+  <object id="64" name="Star" gid="15" x="864" y="64" width="32" height="32"/>
+  <object id="67" name="Star" gid="15" x="864" y="64" width="32" height="32"/>
+  <object id="60" name="Star" gid="15" x="896" y="96" width="32" height="32"/>
+  <object id="63" name="Star" gid="15" x="896" y="64" width="32" height="32"/>
+  <object id="66" name="Star" gid="15" x="896" y="64" width="32" height="32"/>
+  <object id="61" name="Star" gid="15" x="928" y="96" width="32" height="32"/>
+  <object id="62" name="Star" gid="15" x="928" y="64" width="32" height="32"/>
+  <object id="65" name="Star" gid="15" x="928" y="64" width="32" height="32"/>
+  <object id="112" name="Enemy" gid="7" x="256" y="160" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="118"/>
+   </properties>
+  </object>
+  <object id="113" name="Enemy" gid="7" x="512" y="352" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="120"/>
+   </properties>
+  </object>
+  <object id="114" name="Enemy" gid="7" x="256" y="352" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="121"/>
+   </properties>
+  </object>
+  <object id="115" name="Enemy" gid="7" x="608" y="256" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="119"/>
+   </properties>
+  </object>
+  <object id="116" name="Enemy" gid="7" x="96" y="256" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="117"/>
+   </properties>
+  </object>
+  <object id="117" x="32" y="224">
+   <point/>
+  </object>
+  <object id="118" x="320" y="128">
+   <point/>
+  </object>
+  <object id="119" x="672" y="224">
+   <point/>
+  </object>
+  <object id="120" x="768" y="320">
+   <point/>
+  </object>
+  <object id="121" x="416" y="320">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

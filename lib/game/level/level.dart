@@ -1,12 +1,12 @@
 import 'package:flame/components.dart';
 import 'package:flame/extensions.dart';
 import 'package:flame_tiled/flame_tiled.dart';
+import 'package:jungle_adventure/game/actors/background.dart';
 import 'package:jungle_adventure/game/actors/moving_platform.dart';
-
-
-import 'package:jungle_adventure/game/jungle_game.dart';
 import 'package:jungle_adventure/game/actors/player.dart';
 import 'package:jungle_adventure/game/actors/star.dart';
+import 'package:jungle_adventure/game/actors/teleporter.dart';
+import 'package:jungle_adventure/game/jungle_game.dart';
 import 'package:tiled/tiled.dart';
 
 import '../actors/door.dart';
@@ -39,16 +39,20 @@ class Level extends Component with HasGameRef<JungleGame> {
   }
 
   void _spawnActors(RenderableTiledMap tileMap) {
+
+
+
     final platformsLayer = tileMap.getLayer<ObjectGroup>('PlatformsLayer');
 
     for (final platformObject in platformsLayer!.objects) {
+
       final platform = Platform(
         position: Vector2(platformObject.x, platformObject.y),
         size: Vector2(platformObject.width, platformObject.height),
       );
       add(platform);
-    }
 
+    }
 
     final spawnPointsLayer = tileMap.getLayer<ObjectGroup>('SpawnLayer');
     for (final spawnPoint in spawnPointsLayer!.objects) {
@@ -65,37 +69,45 @@ class Level extends Component with HasGameRef<JungleGame> {
           break;
 
         case 'Star':
-          final star = Star(gameRef.spriteSheet,
-              position: position,
-              size: size);
+          final star =
+              Star(gameRef.spriteSheet, position: position, size: size);
           add(star);
           break;
 
         case 'Door':
-          final door = Door(
-
-              gameRef.spriteSheet,
-              position: position,
-              size: size,
+          final door = Door(gameRef.spriteSheet, position: position, size: size,
               onPlayerEnter: () {
-                gameRef.loadLevel(spawnPoint.properties.first.value);
-              });
+            gameRef.loadLevel(spawnPoint.properties.first.value);
+          });
 
           add(door);
           break;
 
+        case 'Teleporter' :
+          final targetObjectId = int.parse(spawnPoint.properties.first.value);
+          final teleporter = Teleporter(gameRef.spriteSheet, position: position, size: size,
+          onPlayerEnter: () {
+            final target = spawnPointsLayer.objects
+                .firstWhere((object) => object.id == targetObjectId);
+            player.teleportToPosition(Vector2(target.x, target.y));
+
+          });
+          add(teleporter);
+          break;
+
         case 'Key':
           final key = Key(
-              gameRef.spriteSheet,
-              position: position,
-              size: size,
+            gameRef.spriteSheet,
+            position: position,
+            size: size,
           );
           add(key);
           break;
 
         case 'Enemy':
           final targetObjectId = int.parse(spawnPoint.properties.first.value);
-          final target = spawnPointsLayer.objects.firstWhere((object) => object.id == targetObjectId);
+          final target = spawnPointsLayer.objects
+              .firstWhere((object) => object.id == targetObjectId);
           final enemy = Enemy(gameRef.spriteSheet,
               position: position,
               targetPosition: Vector2(target.x, target.y),
@@ -103,18 +115,19 @@ class Level extends Component with HasGameRef<JungleGame> {
           add(enemy);
           break;
 
-        case 'MovingPlatform' :
+        case 'MovingPlatform':
           final targetObjectId = int.parse(spawnPoint.properties.first.value);
-          final target = spawnPointsLayer.objects.firstWhere((object) => object.id == targetObjectId);
+          final target = spawnPointsLayer.objects
+              .firstWhere((object) => object.id == targetObjectId);
           final movingPlatform = MovingPlatform(gameRef.spriteSheet,
-          position: position,
-          targetPosition: Vector2(target.x, target.y),
-          size: size);
+              position: position,
+              targetPosition: Vector2(target.x, target.y),
+              size: size);
           add(movingPlatform);
           break;
-
-
       }
+
+
     }
   }
 

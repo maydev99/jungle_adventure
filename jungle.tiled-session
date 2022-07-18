@@ -12,6 +12,14 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "assets/tiles/Images.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/Images2.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/color_squares.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -56,7 +64,7 @@
             "scale": 1.3,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 455.38461538461536,
+                "x": 454.6153846153846,
                 "y": 370.38461538461536
             }
         },
@@ -80,7 +88,27 @@
             "scale": 1.3082291666666668,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 479.2738275340393,
+                "x": 477.7450433951747,
+                "y": 192.24460546221826
+            }
+        },
+        "assets/tiles/level5.tmx": {
+            "expandedObjectLayers": [
+                4,
+                6
+            ],
+            "scale": 1.3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 489.23076923076917,
+                "y": 272.6923076923077
+            }
+        },
+        "assets/tiles/level6.tmx": {
+            "scale": 1.3082291666666668,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 480.0382196034716,
                 "y": 192.24460546221826
             }
         },
@@ -97,6 +125,7 @@
             "scaleInEditor": 1
         },
         "assets/tiles/spritesheet2.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
@@ -130,6 +159,8 @@
     "project": "jungle.tiled-project",
     "property.type": "object",
     "recentFiles": [
+        "assets/tiles/level5.tmx",
+        "assets/tiles/Images.tsx",
         "assets/tiles/spritesheet2.tsx",
         "assets/tiles/level1.tmx",
         "assets/tiles/level2.tmx",
@@ -139,9 +170,7 @@
         "assets/images/player_sprite.tsx",
         "assets/tiles/light.tsx",
         "assets/tiles/weird_lamp_2.tsx",
-        "assets/tiles/color_squares.tsx",
-        "assets/tiles/grey_brick_32_B.tsx",
-        "assets/tiles/grey_brick_32.tsx"
+        "assets/tiles/color_squares.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.margin": 0,
@@ -151,5 +180,6 @@
         "width": 32
     },
     "tileset.transparentColor": "#5309cd",
+    "tileset.type": 1,
     "tileset.useTransparentColor": true
 }

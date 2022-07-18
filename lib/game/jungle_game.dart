@@ -14,6 +14,7 @@ class JungleGame extends FlameGame
     with HasCollisionDetection, HasTappableComponents, HasTappablesBridge {
   Level? _currentLevel;
   late Image spriteSheet;
+  late Image bkgImage;
   late Image items;
   late TapComponent tapComponent;
   late double screenX;
@@ -26,10 +27,12 @@ class JungleGame extends FlameGame
     screenX = size.x;
     screenY = size.y;
 
+    bkgImage = await images.load('cloud_bkg.png');
     spriteSheet = await images.load('spritesheet2.png');
 
+
     camera.viewport = FixedResolutionViewport(Vector2(600, 300));
-    loadLevel('level3.tmx');
+    loadLevel('level6.tmx');
 
 
     overlays.add(HudOverlay.id);

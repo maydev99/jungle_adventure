@@ -15,7 +15,8 @@ class Platform extends PositionComponent with CollisionCallbacks {
       size: size,
       scale: scale,
       angle: angle,
-      anchor: anchor
+      anchor: anchor,
+      priority: priority
   );
 
   @override
