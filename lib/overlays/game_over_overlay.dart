@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
 import 'package:jungle_adventure/overlays/hud_overlay.dart';
@@ -20,6 +21,7 @@ class GameOverOverlayState extends State<GameOverOverlay> {
 
 
   var log = Logger();
+  var box = GetStorage();
 
 
   @override
@@ -32,6 +34,7 @@ class GameOverOverlayState extends State<GameOverOverlay> {
   @override
   Widget build(BuildContext context) {
     var gameRef = widget.gameRef;
+    box.write('high_score', gameRef.playerData.highScore.value);
 
     return Center(
       child: Card(

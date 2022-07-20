@@ -42,6 +42,7 @@ class Key extends SpriteComponent with CollisionCallbacks, HasGameRef<JungleGame
     if (other is Player) {
       add(
         OpacityEffect.fadeOut(LinearEffectController(0.3), onComplete: () {
+          gameRef.makeAToast('You found a Key');
           add(RemoveEffect());
           gameRef.playerData.key.value = true;
         }),

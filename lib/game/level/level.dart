@@ -85,7 +85,7 @@ class Level extends Component with HasGameRef<JungleGame> {
 
         case 'Teleporter' :
           final targetObjectId = int.parse(spawnPoint.properties.first.value);
-          final teleporter = Teleporter(gameRef.spriteSheet, position: position, size: size,
+          final teleporter = Teleporter(gameRef.teleporterImage, position: position, size: size,
           onPlayerEnter: () {
             final target = spawnPointsLayer.objects
                 .firstWhere((object) => object.id == targetObjectId);

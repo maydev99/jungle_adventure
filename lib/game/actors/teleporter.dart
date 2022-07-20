@@ -20,7 +20,7 @@ class Teleporter extends SpriteComponent with CollisionCallbacks, HasGameRef<Jun
         Vector2? targetPosition,
       }) : super.fromImage(
     image,
-    srcPosition: Vector2(32, 3 * 32),
+    srcPosition: Vector2(0,0),
     srcSize: Vector2.all(32),
     position: position,
     size: size,

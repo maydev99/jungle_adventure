@@ -15,6 +15,7 @@ dependencies:
   flame_tiled: 1.5.0
   tiled: any
   google_fonts: any
+  get_storage: any
 
 
   flutter:

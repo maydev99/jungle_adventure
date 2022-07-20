@@ -5,4 +5,6 @@ class PlayerData {
   final health = ValueNotifier<int>(5);
   final key = ValueNotifier<bool>(false);
   final bonusLifePointCount = ValueNotifier<int>(0);
+  final toast = ValueNotifier<String>('');
+  final highScore = ValueNotifier<int>(0);
 }

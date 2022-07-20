@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="122">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="131">
  <tileset firstgid="1" source="spritesheet2.tsx"/>
+ <tileset firstgid="21" source="teleporter.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="12">
   <data encoding="base64">
    CwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACAAAAAsAAAAIAAAACAAAAAgAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAsAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAgAAAALAAAACAAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACAAAAAgAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAA
@@ -9,7 +10,7 @@
  <objectgroup id="2" name="PlatformsLayer">
   <object id="9" x="0" y="256" width="224" height="32"/>
   <object id="10" x="0" y="352" width="960" height="32"/>
-  <object id="14" x="0" y="288" width="32" height="64"/>
+  <object id="14" x="0" y="288" width="32" height="96"/>
   <object id="15" x="192" y="288" width="32" height="64"/>
   <object id="16" x="800" y="96" width="160" height="32"/>
   <object id="27" x="0" y="32" width="96" height="32"/>
@@ -46,18 +47,8 @@
   <object id="58" x="768" y="288" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="SpawnLayer">
-  <object id="1" name="Teleporter" gid="14" x="160" y="352" width="32" height="32">
-   <properties>
-    <property name="Target" type="object" value="8"/>
-   </properties>
-  </object>
-  <object id="2" name="Player" gid="12" x="32" y="320" width="32" height="32"/>
+  <object id="2" name="Player" gid="12" x="64" y="320" width="32" height="32"/>
   <object id="4" name="Key" gid="6" x="512" y="160" width="32" height="32"/>
-  <object id="5" name="Teleporter" gid="14" x="832" y="32" width="32" height="32">
-   <properties>
-    <property name="Target" type="object" value="17"/>
-   </properties>
-  </object>
   <object id="6" name="Door" gid="16" x="928" y="352" width="32" height="32">
    <properties>
     <property name="NextLevel" value="level1.tmx"/>
@@ -68,26 +59,6 @@
   </object>
   <object id="17" x="96" y="320">
    <point/>
-  </object>
-  <object id="18" name="Teleporter" gid="14" x="832" y="288" width="32" height="32">
-   <properties>
-    <property name="Target" type="object" value="26"/>
-   </properties>
-  </object>
-  <object id="19" name="Teleporter" gid="14" x="0" y="32" width="32" height="32">
-   <properties>
-    <property name="Target" type="object" value="25"/>
-   </properties>
-  </object>
-  <object id="20" name="Teleporter" gid="14" x="0" y="256" width="32" height="32">
-   <properties>
-    <property name="Target" type="object" value="24"/>
-   </properties>
-  </object>
-  <object id="23" name="Teleporter" gid="14" x="416" y="160" width="32" height="32">
-   <properties>
-    <property name="Target" type="object" value="17"/>
-   </properties>
   </object>
   <object id="24" x="512" y="128">
    <point/>
@@ -185,5 +156,36 @@
   <object id="121" x="416" y="320">
    <point/>
   </object>
+  <object id="122" name="Teleporter" gid="21" x="832" y="288" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="26"/>
+   </properties>
+  </object>
+  <object id="123" name="Teleporter" gid="21" x="800" y="32" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="17"/>
+   </properties>
+  </object>
+  <object id="125" name="Teleporter" gid="21" x="416" y="160" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="17"/>
+   </properties>
+  </object>
+  <object id="127" name="Teleporter" gid="21" x="160" y="352" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="8"/>
+   </properties>
+  </object>
+  <object id="128" name="Teleporter" gid="21" x="0" y="256" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="24"/>
+   </properties>
+  </object>
+  <object id="129" name="Teleporter" gid="21" x="0" y="32" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="25"/>
+   </properties>
+  </object>
+  <object id="130" gid="21" x="736" y="544" width="32" height="32"/>
  </objectgroup>
 </map>

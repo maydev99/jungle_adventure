@@ -24,14 +24,27 @@ class HudOverlayState extends State<HudOverlay> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            ValueListenableBuilder(
-              valueListenable: gameRef.playerData.score,
-              builder: (context, value, child) {
-                return Text(
-                  'Score: ${value.toString()}',
-                  style: const TextStyle(color: Colors.white, fontSize: 22),
-                );
-              },
+            Column(
+              children: [
+                ValueListenableBuilder(
+                  valueListenable: gameRef.playerData.score,
+                  builder: (context, value, child) {
+                    return Text(
+                      'Score: ${value.toString()}',
+                      style: const TextStyle(color: Colors.white, fontSize: 22),
+                    );
+                  },
+                ),
+                ValueListenableBuilder(
+                  valueListenable: gameRef.playerData.highScore,
+                  builder: (context, value, child) {
+                    return Text(
+                      'High: ${value.toString()}',
+                      style: const TextStyle(color: Colors.white, fontSize: 16),
+                    );
+                  },
+                ),
+              ],
             ),
             IconButton(
               onPressed: () {

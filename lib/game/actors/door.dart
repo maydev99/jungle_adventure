@@ -41,11 +41,12 @@ class Door extends SpriteComponent with CollisionCallbacks, HasGameRef<JungleGam
     if (other is Player) {
 
       if(gameRef.playerData.key.value) {
+        gameRef.makeAToast('Level Complete');
         other.removeFromParent();
         onPlayerEnter?.call();
         gameRef.playerData.key.value = false;
       } else {
-        print('Door is locked');
+        gameRef.makeAToast('Locked');
       }
 
 
