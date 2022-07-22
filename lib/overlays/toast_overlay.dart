@@ -27,7 +27,7 @@ class ToastOverlayState extends State<ToastOverlay> {
     return Center(
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        color: Colors.black.withOpacity(0.5),
+        color: Colors.black.withOpacity(0.1),
         child: FittedBox(
           fit: BoxFit.scaleDown,
           child: Padding(
@@ -42,7 +42,7 @@ class ToastOverlayState extends State<ToastOverlay> {
                   builder: (context, value, child) {
                     return Text(
                       value.toString(),
-                      style: const TextStyle(fontSize: 30, color: Colors.white),
+                      style: const TextStyle(fontSize: 20, color: Colors.white),
                     );
                   },
                 ),

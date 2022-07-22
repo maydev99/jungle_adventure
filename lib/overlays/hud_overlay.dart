@@ -20,7 +20,7 @@ class HudOverlayState extends State<HudOverlay> {
     return SizedBox(
       height: 50,
       child: DecoratedBox(
-        decoration: BoxDecoration(color: Colors.black.withOpacity(0.1)),
+        decoration: BoxDecoration(color: Colors.black.withOpacity(0.4)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -49,12 +49,29 @@ class HudOverlayState extends State<HudOverlay> {
             IconButton(
               onPressed: () {
                 gameRef.pauseEngine();
+                gameRef.saveHighScore();
                 gameRef.overlays.add(PauseOverlay.id);
                 gameRef.overlays.remove(HudOverlay.id);
               },
               icon: const Icon(Icons.pause_circle),
               color: Colors.white,
               iconSize: 35,
+            ),
+            
+            Row(
+              children: [
+                Image.asset('assets/images/star.png'),
+                ValueListenableBuilder(
+                  valueListenable: gameRef.playerData.bonusLifePointCount,
+                  builder: (context, value, child) {
+                    return Text(
+                      '${value.toString()} / 100',
+                      style: const TextStyle(color: Colors.white, fontSize: 16),
+                    );
+                  },
+                ),
+
+              ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,

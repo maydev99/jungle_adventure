@@ -98,7 +98,7 @@
                 6
             ],
             "scale": 1.3,
-            "selectedLayer": 2,
+            "selectedLayer": 1,
             "viewCenter": {
                 "x": 489.23076923076917,
                 "y": 272.6923076923077
@@ -113,6 +113,14 @@
             "viewCenter": {
                 "x": 479.99999999999994,
                 "y": 191.9230769230769
+            }
+        },
+        "assets/tiles/level7.tmx": {
+            "scale": 1.3082291666666668,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 480.0382196034716,
+                "y": 125.74249542160999
             }
         },
         "assets/tiles/light.tsx": {
@@ -163,7 +171,7 @@
         "assets/tiles/level3.tmx"
     ],
     "project": "jungle.tiled-project",
-    "property.type": "object",
+    "property.type": "string",
     "recentFiles": [
         "assets/tiles/level5.tmx",
         "assets/tiles/Images.tsx",

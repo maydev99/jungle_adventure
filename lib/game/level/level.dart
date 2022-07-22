@@ -2,6 +2,7 @@ import 'package:flame/components.dart';
 import 'package:flame/extensions.dart';
 import 'package:flame_tiled/flame_tiled.dart';
 import 'package:jungle_adventure/game/actors/background.dart';
+import 'package:jungle_adventure/game/actors/background2.dart';
 import 'package:jungle_adventure/game/actors/moving_platform.dart';
 import 'package:jungle_adventure/game/actors/player.dart';
 import 'package:jungle_adventure/game/actors/star.dart';
@@ -18,14 +19,16 @@ class Level extends Component with HasGameRef<JungleGame> {
   final String levelName;
   late Player player;
   late Rect levelBounds;
+  late BackgroundComponent backgroundComponent;
 
   Level(this.levelName) : super();
 
   @override
   Future<void>? onLoad() async {
     final level = await TiledComponent.load(levelName, Vector2.all(32));
+    backgroundComponent = BackgroundComponent();
 
-    add(level);
+
 
     levelBounds = Rect.fromLTWH(
         0,
@@ -33,26 +36,36 @@ class Level extends Component with HasGameRef<JungleGame> {
         (level.tileMap.map.width * level.tileMap.map.tileWidth).toDouble(),
         (level.tileMap.map.height * level.tileMap.map.tileHeight).toDouble());
 
-    _spawnActors(level.tileMap);
-    _setupCamera();
+    await add(level);
+    await spawnActors(level.tileMap);
+
+    await setupCamera();
     return super.onLoad();
   }
 
-  void _spawnActors(RenderableTiledMap tileMap) {
+  spawnActors(RenderableTiledMap tileMap) async{
 
+
+    /*final bkg = Background(gameRef.bkgImage,
+        position: Vector2(0,0),
+        size: Vector2(250, 250));
+    bkg.changePriorityWithoutResorting(0);
+    await add(bkg);*/
+
+    //await add(backgroundComponent);
+    //backgroundComponent.changePriorityWithoutResorting(0);
 
 
     final platformsLayer = tileMap.getLayer<ObjectGroup>('PlatformsLayer');
 
     for (final platformObject in platformsLayer!.objects) {
-
       final platform = Platform(
         position: Vector2(platformObject.x, platformObject.y),
         size: Vector2(platformObject.width, platformObject.height),
       );
       add(platform);
-
     }
+
 
     final spawnPointsLayer = tileMap.getLayer<ObjectGroup>('SpawnLayer');
     for (final spawnPoint in spawnPointsLayer!.objects) {
@@ -83,14 +96,13 @@ class Level extends Component with HasGameRef<JungleGame> {
           add(door);
           break;
 
-        case 'Teleporter' :
+        case 'Teleporter':
           final targetObjectId = int.parse(spawnPoint.properties.first.value);
-          final teleporter = Teleporter(gameRef.teleporterImage, position: position, size: size,
-          onPlayerEnter: () {
+          final teleporter = Teleporter(gameRef.teleporterImage,
+              position: position, size: size, onPlayerEnter: () {
             final target = spawnPointsLayer.objects
                 .firstWhere((object) => object.id == targetObjectId);
             player.teleportToPosition(Vector2(target.x, target.y));
-
           });
           add(teleporter);
           break;
@@ -126,12 +138,10 @@ class Level extends Component with HasGameRef<JungleGame> {
           add(movingPlatform);
           break;
       }
-
-
     }
   }
 
-  void _setupCamera() {
+  setupCamera() {
     gameRef.camera.followComponent(player);
     gameRef.camera.worldBounds = levelBounds;
   }

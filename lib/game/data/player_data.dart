@@ -7,4 +7,5 @@ class PlayerData {
   final bonusLifePointCount = ValueNotifier<int>(0);
   final toast = ValueNotifier<String>('');
   final highScore = ValueNotifier<int>(0);
+  final hasBeenNotifiedOfHighScore = ValueNotifier<bool>(false);
 }

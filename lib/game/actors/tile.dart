@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:flame/components.dart';
 
-class Background extends SpriteComponent {
-  Background(
+class Tile extends SpriteComponent {
+  Tile(
       Image image, {
         required Vector2? position,
         required Vector2? size,

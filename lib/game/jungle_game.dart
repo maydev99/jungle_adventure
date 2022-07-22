@@ -24,6 +24,8 @@ class JungleGame extends FlameGame
   late TapComponent tapComponent;
   late double screenX;
   late double screenY;
+  late int score;
+  late int high;
   final Timer _toastTimer = Timer(1);
   bool isShowingToast = false;
   final playerData = PlayerData();
@@ -42,7 +44,7 @@ class JungleGame extends FlameGame
 
 
     camera.viewport = FixedResolutionViewport(Vector2(600, 300));
-    loadLevel('level5.tmx');
+    loadLevel('level7.tmx');
 
 
     overlays.add(HudOverlay.id);
@@ -70,14 +72,20 @@ class JungleGame extends FlameGame
   @override
   void update(double dt) {
     int lives =  playerData.health.value;
-    int score = playerData.score.value;
-    int high = playerData.highScore.value;
+    score = playerData.score.value;
+    high = playerData.highScore.value;
+
+    saveHighScore();
+
+
     int bonusLifePointCount = playerData.bonusLifePointCount.value;
     if(lives < 1) {
       pauseEngine();
+      saveHighScore();
+      playerData.hasBeenNotifiedOfHighScore.value = false;
       overlays.add(GameOverOverlay.id);
     }
-    //print(bonusLifePointCount);
+
     if(bonusLifePointCount >= 100) {
       makeAToast('Bonus Life +1');
 
@@ -85,15 +93,6 @@ class JungleGame extends FlameGame
       playerData.bonusLifePointCount.value = 0;
     }
 
-    if(score > high) {
-      playerData.highScore.value = score;
-      //box.write('high_score', score);
-
-    }
-
-    /*if(score > previousHighScore && previousHighScore > 0) {
-      makeAToast('New High Score!');
-    }*/
 
     _toastTimer.update(dt);
 
@@ -103,6 +102,13 @@ class JungleGame extends FlameGame
 
 
     super.update(dt);
+  }
+
+  void saveHighScore() {
+
+    if(score > high) {
+      playerData.highScore.value = score;
+      }
   }
 
   void loadLevel(String levelName) {
@@ -140,6 +146,7 @@ class JungleGame extends FlameGame
         break;
       case AppLifecycleState.detached:
         overlays.add(PauseOverlay.id);
+        saveHighScore();
         pauseEngine();
         break;
       case AppLifecycleState.inactive:
@@ -149,6 +156,7 @@ class JungleGame extends FlameGame
         }
 
         pauseEngine();
+        saveHighScore();
 
         break;
     }
