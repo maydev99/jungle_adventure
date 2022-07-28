@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="40">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="42">
  <tileset firstgid="1" source="spritesheet2.tsx"/>
- <tileset firstgid="21" source="spritesheet2.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="12">
   <data encoding="base64">
-   HwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAcAAAAHwAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAcAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAcAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAcAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAABwAAAAcAAAAHAAAABwAAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAcAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAABwAAAAcAAAAHAAAABwAAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAcAAAAHAAAABwAAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAcAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAABwAAAAcAAAAHAAAABwAAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAcAAAAHAAAABwAAAAcAAAAHwAAAB8AAAAfAAAAHwAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAA
+   CwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAsAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACwAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACAAAAAgAAAAIAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAALAAAACwAAAAsAAAAIAAAACAAAAAgAAAAIAAAACwAAAAsAAAALAAAACwAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAA
   </data>
  </layer>
  <objectgroup id="2" name="PlatformsLayer">
   <object id="1" x="1.52878" y="62.6801" width="381.432" height="30.5757"/>
-  <object id="2" x="480.803" y="96.3134" width="94.0202" height="29.0469"/>
+  <object id="2" x="480.803" y="96.3134" width="31.197" height="29.0469"/>
   <object id="3" x="2.29318" y="257.6" width="61.9158" height="94.7846"/>
   <object id="5" x="641.325" y="159.758" width="126.125" height="66.5021"/>
   <object id="6" x="642.089" y="289.705" width="125.36" height="59.6226"/>
@@ -18,24 +17,25 @@
   <object id="9" x="480.803" y="223.967" width="95.549" height="30.5757"/>
   <object id="10" x="351.62" y="287.411" width="96.3134" height="32.1045"/>
   <object id="11" x="1.52878" y="352.385" width="957.783" height="29.0469"/>
+  <object id="40" x="544" y="96" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="SpawnLayer">
-  <object id="12" name="Enemy" gid="27" x="159.81" y="350.039" width="32" height="32">
+  <object id="12" name="Enemy" gid="7" x="159.81" y="350.039" width="32" height="32">
    <properties>
     <property name="Target" type="object" value="18"/>
    </properties>
   </object>
-  <object id="13" name="Enemy" gid="27" x="478.562" y="96.2612" width="32" height="32">
+  <object id="13" name="Enemy" gid="7" x="478.562" y="96.2612" width="32" height="32">
    <properties>
     <property name="Target" type="object" value="16"/>
    </properties>
   </object>
-  <object id="14" name="Enemy" gid="27" x="834.004" y="350.804" width="32" height="32">
+  <object id="14" name="Enemy" gid="7" x="834.004" y="350.804" width="32" height="32">
    <properties>
     <property name="Target" type="object" value="19"/>
    </properties>
   </object>
-  <object id="15" name="Enemy" gid="27" x="639.084" y="158.941" width="32" height="32">
+  <object id="15" name="Enemy" gid="7" x="639.084" y="158.941" width="32" height="32">
    <properties>
     <property name="Target" type="object" value="17"/>
    </properties>
@@ -52,25 +52,26 @@
   <object id="19" x="768.978" y="318.751">
    <point/>
   </object>
-  <object id="20" name="Player" gid="32" x="-0.712159" y="255.255" width="32" height="32"/>
-  <object id="21" name="Star" gid="35" x="94.0725" y="352.333" width="32" height="32"/>
-  <object id="24" name="Star" gid="35" x="127.706" y="352.333" width="32" height="32"/>
-  <object id="27" name="Star" gid="35" x="353.201" y="285.83" width="32" height="32"/>
-  <object id="28" name="Star" gid="35" x="415.882" y="287.359" width="32" height="32"/>
-  <object id="29" name="Star" gid="35" x="509.902" y="224.679" width="32" height="32"/>
-  <object id="30" name="Star" gid="35" x="32.9211" y="61.8635" width="32" height="32"/>
-  <object id="31" name="Star" gid="35" x="65.79" y="61.8635" width="32" height="32"/>
-  <object id="32" name="Star" gid="35" x="97.13" y="61.8635" width="32" height="32"/>
-  <object id="33" name="Star" gid="35" x="127.706" y="62.6279" width="32" height="32"/>
-  <object id="34" name="Star" gid="35" x="545.064" y="94.7324" width="32" height="32"/>
-  <object id="35" name="Star" gid="35" x="736.926" y="159.706" width="32" height="32"/>
-  <object id="36" name="Star" gid="35" x="830.946" y="123.015" width="32" height="32"/>
-  <object id="37" name="Star" gid="35" x="575.639" y="352.333" width="32" height="32"/>
-  <object id="38" name="Key" gid="26" x="0.816626" y="62.6279" width="32" height="32"/>
-  <object id="39" name="Door" gid="36" x="928.789" y="94.7324" width="30.4712" height="32">
+  <object id="20" name="Player" gid="12" x="-0.712159" y="255.255" width="32" height="32"/>
+  <object id="21" name="Star" gid="15" x="94.0725" y="352.333" width="32" height="32"/>
+  <object id="24" name="Star" gid="15" x="127.706" y="352.333" width="32" height="32"/>
+  <object id="27" name="Star" gid="15" x="353.201" y="285.83" width="32" height="32"/>
+  <object id="28" name="Star" gid="15" x="415.882" y="287.359" width="32" height="32"/>
+  <object id="29" name="Star" gid="15" x="509.902" y="224.679" width="32" height="32"/>
+  <object id="30" name="Star" gid="15" x="32.9211" y="61.8635" width="32" height="32"/>
+  <object id="31" name="Star" gid="15" x="65.79" y="61.8635" width="32" height="32"/>
+  <object id="32" name="Star" gid="15" x="97.13" y="61.8635" width="32" height="32"/>
+  <object id="33" name="Star" gid="15" x="127.706" y="62.6279" width="32" height="32"/>
+  <object id="34" name="Star" gid="15" x="545.064" y="94.7324" width="32" height="32"/>
+  <object id="35" name="Star" gid="15" x="736.926" y="159.706" width="32" height="32"/>
+  <object id="36" name="Star" gid="15" x="830.946" y="123.015" width="32" height="32"/>
+  <object id="37" name="Star" gid="15" x="575.639" y="352.333" width="32" height="32"/>
+  <object id="38" name="Key" gid="6" x="0.816626" y="62.6279" width="32" height="32"/>
+  <object id="39" name="Door" gid="16" x="928.789" y="94.7324" width="30.4712" height="32">
    <properties>
     <property name="NextLevel" value="level2.tmx"/>
    </properties>
   </object>
+  <object id="41" name="BonusPlatform" gid="8" x="512" y="128" width="32" height="32"/>
  </objectgroup>
 </map>

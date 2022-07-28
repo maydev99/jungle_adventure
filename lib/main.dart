@@ -8,8 +8,9 @@ import 'package:jungle_adventure/game/jungle_game.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Flame.device.fullScreen();
-  Flame.device.setLandscape();
+  await Flame.device.setLandscape(); // set first so zone controls work properly
+  await Flame.device.fullScreen(); //set second
+
   await GetStorage.init();
   runApp(const MyApp());
 }

@@ -31,7 +31,11 @@ class Door extends SpriteComponent with CollisionCallbacks, HasGameRef<JungleGam
 
   @override
   Future<void>? onLoad() {
-    add(RectangleHitbox()..collisionType = CollisionType.passive);
+
+
+
+    add(RectangleHitbox.relative(Vector2(0.3,0.3), parentSize: Vector2(64,64)));
+    //add(RectangleHitbox()..collisionType = CollisionType.passive);
     return super.onLoad();
   }
 

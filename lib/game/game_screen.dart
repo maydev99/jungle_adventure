@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:jungle_adventure/game/jungle_game.dart';
 import 'package:jungle_adventure/overlays/game_over_overlay.dart';
 import 'package:jungle_adventure/overlays/hud_overlay.dart';
+import 'package:jungle_adventure/overlays/toast_image_overlay.dart';
 import 'package:jungle_adventure/overlays/toast_overlay.dart';
 
 import '../overlays/pause_overlay.dart';
@@ -40,6 +41,7 @@ class GameScreenState extends State<GameScreen> {
                 HudOverlay.id: (_, JungleGame gameRef) => HudOverlay(gameRef: _gameMain),
                 GameOverOverlay.id: (_, JungleGame gameRef) => GameOverOverlay(gameRef: _gameMain),
                 ToastOverlay.id: (_, JungleGame gameRef) => ToastOverlay(gameRef: _gameMain),
+                ToastImageOverlay.id: (_, JungleGame gameRef) => ToastImageOverlay(gameRef: _gameMain),
 
 
               },

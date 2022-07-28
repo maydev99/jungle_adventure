@@ -3,6 +3,8 @@ import 'package:flame/extensions.dart';
 import 'package:flame_tiled/flame_tiled.dart';
 import 'package:jungle_adventure/game/actors/background.dart';
 import 'package:jungle_adventure/game/actors/background2.dart';
+import 'package:jungle_adventure/game/actors/bonus_platform.dart';
+import 'package:jungle_adventure/game/actors/hidden_stars.dart';
 import 'package:jungle_adventure/game/actors/moving_platform.dart';
 import 'package:jungle_adventure/game/actors/player.dart';
 import 'package:jungle_adventure/game/actors/star.dart';
@@ -20,11 +22,14 @@ class Level extends Component with HasGameRef<JungleGame> {
   late Player player;
   late Rect levelBounds;
   late BackgroundComponent backgroundComponent;
+  var hasSpawnedHiddenStars = false;
 
   Level(this.levelName) : super();
 
+
   @override
   Future<void>? onLoad() async {
+    hasSpawnedHiddenStars = gameRef.playerData.hasSpawnedHiddenStars.value;
     final level = await TiledComponent.load(levelName, Vector2.all(32));
     backgroundComponent = BackgroundComponent();
 
@@ -40,20 +45,14 @@ class Level extends Component with HasGameRef<JungleGame> {
     await spawnActors(level.tileMap);
 
     await setupCamera();
+
     return super.onLoad();
   }
 
+
+
+
   spawnActors(RenderableTiledMap tileMap) async{
-
-
-    /*final bkg = Background(gameRef.bkgImage,
-        position: Vector2(0,0),
-        size: Vector2(250, 250));
-    bkg.changePriorityWithoutResorting(0);
-    await add(bkg);*/
-
-    //await add(backgroundComponent);
-    //backgroundComponent.changePriorityWithoutResorting(0);
 
 
     final platformsLayer = tileMap.getLayer<ObjectGroup>('PlatformsLayer');
@@ -96,6 +95,7 @@ class Level extends Component with HasGameRef<JungleGame> {
           add(door);
           break;
 
+
         case 'Teleporter':
           final targetObjectId = int.parse(spawnPoint.properties.first.value);
           final teleporter = Teleporter(gameRef.teleporterImage,
@@ -137,12 +137,21 @@ class Level extends Component with HasGameRef<JungleGame> {
               size: size);
           add(movingPlatform);
           break;
+
+        case 'BonusPlatform':
+          final bonusPlatform = BonusPlatform(gameRef.spriteSheet,
+          position: position,
+          size: size);
+          add(bonusPlatform);
+          break;
       }
     }
   }
+
 
   setupCamera() {
     gameRef.camera.followComponent(player);
     gameRef.camera.worldBounds = levelBounds;
   }
+
 }

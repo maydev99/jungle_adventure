@@ -20,7 +20,7 @@ class HudOverlayState extends State<HudOverlay> {
     return SizedBox(
       height: 50,
       child: DecoratedBox(
-        decoration: BoxDecoration(color: Colors.black.withOpacity(0.4)),
+        decoration: BoxDecoration(color: Colors.black.withOpacity(0.2)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [

@@ -20,6 +20,7 @@ class TapComponent extends PositionComponent
 
   @override
   Future<void>? onLoad() {
+   // debugMode = true;
     return super.onLoad();
   }
 
