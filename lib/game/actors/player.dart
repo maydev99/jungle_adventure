@@ -119,6 +119,7 @@ class Player extends SpriteComponent
     if (other is MovingPlatform) {
       double centerPlatformWidth = other.width / 2;
       position.x = other.position.x + centerPlatformWidth;
+      //position.x = other.position.x;
     }
     super.onCollision(intersectionPoints, other);
   }

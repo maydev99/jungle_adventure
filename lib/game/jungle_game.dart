@@ -48,7 +48,7 @@ class JungleGame extends FlameGame
     punky = await images.load('punky.png');
 
     camera.viewport = FixedResolutionViewport(Vector2(600, 300));
-    loadLevel('level5.tmx');
+    loadLevel('level1.tmx');
 
     overlays.add(HudOverlay.id);
 
@@ -124,18 +124,24 @@ class JungleGame extends FlameGame
   }
 
   void makeAToast(String message) {
-    playerData.toast.value = message;
-    isShowingToast = true;
-    overlays.add(ToastOverlay.id);
-    _toastTimer.start();
+    if(!isShowingToast) {
+      playerData.toast.value = message;
+      isShowingToast = true;
+      overlays.add(ToastOverlay.id);
+      _toastTimer.start();
+    }
+
   }
 
   void makeImageToast(String message, String image) {
-    playerData.toast.value = message;
-    playerData.toastImage.value = image;
-    isShowingToast = true;
-    overlays.add(ToastImageOverlay.id);
-    _toastTimer.start();
+    if(!isShowingToast) {
+      playerData.toast.value = message;
+      playerData.toastImage.value = image;
+      isShowingToast = true;
+      overlays.add(ToastImageOverlay.id);
+      _toastTimer.start();
+    }
+
   }
 
   @override
